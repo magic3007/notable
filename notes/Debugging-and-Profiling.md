@@ -2,7 +2,7 @@
 tags: [Notebooks/Cheatsheet]
 title: Debugging and Profiling
 created: '2020-02-09T14:54:37.819Z'
-modified: '2020-02-27T06:39:00.153Z'
+modified: '2020-03-09T06:42:52.801Z'
 ---
 
 # Debugging and Profiling
@@ -194,6 +194,8 @@ time dd if=/dev/zero bs=1024 count=1000000 of=/1Gb.file
 - **Open Files** - [`lsof`](http://man7.org/linux/man-pages/man8/lsof.8.html) lists file information about files opened by processes. It can be quite useful for checking which process has opened a specific file.
 - **Network Connections and Config** - [`ss`](http://man7.org/linux/man-pages/man8/ss.8.html) lets you monitor incoming and outgoing network packets statistics as well as interface statistics. A common use case of `ss` is figuring out what process is using a given port in a machine. For displaying routing, network devices and interfaces you can use [`ip`](http://man7.org/linux/man-pages/man8/ip.8.html). Note that `netstat` and `ifconfig` have been deprecated in favor of the former tools respectively.
 - **Network Usage** - [`nethogs`](https://github.com/raboof/nethogs) and [`iftop`](http://www.ex-parrot.com/pdw/iftop/) are good interactive CLI tools for monitoring network usage.
+
+- **Hardware Summary**: `dmidecode` gives a description of the system's hardware components
 
 If you want to test these tools you can also artificially impose loads on the machine using the [`stress`](https://linux.die.net/man/1/stress) command.
 

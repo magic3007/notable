@@ -2,7 +2,7 @@
 tags: [Notebooks/Cheatsheet]
 title: git
 created: '2020-02-06T16:36:53.319Z'
-modified: '2020-03-06T09:07:33.719Z'
+modified: '2020-03-07T04:16:05.328Z'
 ---
 
 # git
@@ -25,6 +25,7 @@ git config --global --unset <key-name>
 
 # [proxy]
 # relative key-names: http.proxy https.proxy http.proxy
+# url.https://github.com/.insteadof=git://github.com/
 
 # [password-free]
 # add RSA public key to github in advance

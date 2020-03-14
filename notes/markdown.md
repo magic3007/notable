@@ -2,33 +2,36 @@
 tags: [Notebooks/Cheatsheet]
 title: markdown
 created: '2020-02-23T14:34:25.893Z'
-modified: '2020-03-06T09:54:47.163Z'
+modified: '2020-03-06T10:33:04.917Z'
 ---
 
 # markdown
 
-### 图文混排
-使用 <img> 标签来贴图，然后指定 align 属性.
-<img align="right" src="https://raw.githubusercontent.com/mzlogin/mzlogin.github.io/master/images/posts/markdown/demo.png"/>
+### Mixing Images and Texts
+```
+<img align="right" src=...>
+```
+<img align="right" src="@attachment/icon_small.png"/>
 
-这是一个示例图片。
+This is a demo.
 
-图片显示在 N 段文字的右边。
+The picture is on the right.
 
-N 与图片高度有关。
-
-刷屏行。
-
-刷屏行。
-
-到这里应该不会受影响了，本行应该延伸到了图片的正下方，所以我要足够长才能确保不同的屏幕下都看到效果.
 
 ### `<markdown>` Tag
 A custom <markdown> HTML tag is supported. Anything written inside it will be rendered as Markdown. This is particularly useful when you have to write some wrapper HTML but you still want to write Markdown inside it.
 
+<details>
+  <summary>Click to show more...</summary>
+  <markdown>
+- Embedded
+  - _Markdown_
+  </markdown>
+</details>
+
 ```
-<details open>
-  <summary>Summary...</summary>
+<details>
+  <summary>Click to show more...</summary>
   <markdown>
 - Embedded
   - _Markdown_
@@ -36,13 +39,45 @@ A custom <markdown> HTML tag is supported. Anything written inside it will be re
 </details>
 ```
 
+### HTML
+HTML can be written inside Markdown. The following are some useful HTML tags that you might want to know for which there's no Markdown-specific syntax.
+
+<!-- Comment -->
+
+#### Abbreviation
+
+<abbr title="Mister">Mr.</abbr>
+
+#### Center
+
+<center>Center</center>
+<p align="center">Center</p>
+
+#### Description List
+
+<dl>
+ <dt>Mr.</dt>
+ <dd>Mister</dd>
+</dl>
+
+#### Details
+
 <details open>
   <summary>Summary...</summary>
-  <markdown>
-- Embedded
-  - _Markdown_
-  </markdown>
+  Details...
 </details>
+
+#### Keyboard
+
+<kbd>Ctrl+F5</kbd>
+
+#### Mark
+
+<mark>Text</mark>
+
+#### Small
+
+<small>Text</small>
 
 ### Reference
 

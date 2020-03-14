@@ -2,7 +2,7 @@
 tags: [Notebooks/Cheatsheet]
 title: command-line environment
 created: '2020-02-09T12:27:53.581Z'
-modified: '2020-02-25T01:34:05.989Z'
+modified: '2020-03-09T09:29:41.869Z'
 ---
 
 # command-line environment

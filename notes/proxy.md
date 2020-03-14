@@ -2,7 +2,7 @@
 tags: [Notebooks/Cheatsheet]
 title: proxy
 created: '2020-02-22T15:51:13.595Z'
-modified: '2020-02-28T15:09:38.055Z'
+modified: '2020-03-07T02:37:42.115Z'
 ---
 
 # proxy
@@ -33,7 +33,7 @@ modified: '2020-02-28T15:09:38.055Z'
 - 先在srever A上把server B对应端口的流量转发回来
 ```bash
 ssh -fCNR [B机器IP或省略]:[B机器端口]:[A机器的IP]:[A机器端口] [登陆B机器的用户名@服务器IP]
-autossh -M 55555 -CNR 2222:localhost:22 magic@47.94.219.7
+autossh -M 55555 -fCNR 2222:localhost:22 magic@47.94.219.7
 ```
 - 然后在server B上进行本地转发
 ```bash

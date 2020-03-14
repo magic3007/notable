@@ -2,7 +2,7 @@
 tags: [Notebooks/Compiler]
 title: Token Analysis
 created: '2020-02-29T04:05:09.957Z'
-modified: '2020-02-29T07:49:32.120Z'
+modified: '2020-03-08T13:38:51.430Z'
 ---
 
 # Token Analysis
@@ -15,7 +15,7 @@ Regex -> NFA
 
 
 
-$ R \rightarrow R_1 \vert R_2 \ldots \vert R_n $
+$R \rightarrow R_1 \vert R_2 \ldots \vert R_n$
 
 priority: longest matching ; same length, prefers the one listed first
 

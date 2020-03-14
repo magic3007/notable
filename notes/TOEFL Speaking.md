@@ -11,37 +11,37 @@ modified: '2020-02-18T14:24:56.593Z'
 
 ## Database
 
-| Category                            | Tag                  |                                                              |
-| ----------------------------------- | -------------------- | ------------------------------------------------------------ |
-| friend                              | People               | John(人名)<br />high school classmate <br />like playing basketball and NBA<br />can't swim <br />live near me <br />be good at English, want to be a English teacher |
-| leader, teacher, parent             | people               | John<br />class teacher(班主任) <br />{patient}: teach me how to control the temper <br />{kind}: help people find their potential, give me the courage challenge new things<br />讲帮助你度过了什么困难: When I leaved my hometown and entered the collage, I found myself difficult to catch up with my peers and felt stressful. I consulted my class teacher about my concern and she…<br />{organized}: help me figure out a plan for the future <br />{responsible}: never throw the responsibility to the followers and set a example for me <br />{polite}: treat each other equally, having no discrimination <br />honest: |
-| hero                                | people               | Elon Musk, a legendary entrepreneur<br />ambitious: found epochal companies, like Paypal, SpaceX, and Tesla |
-| country, city                       | place                | Hongkong<br />some brilliant Cantonnese restaurants, and I am quiet fascinated by Cantonese food, like Dim Sum and Kongfu tea.<br />Hong Kong is an international dock and people from diverse conuntrites gather there Therefore, the goods in Hong Kong are so cheap that I feel like looking around the latest digital products like iPhone and Macbook there. |
-| restaurant                          | place                | Japanese resturant, sushi boat style restaurant<br />sushi, oolong tea and ramen<br />enjoy the atmosphere of Japan<br />the clerk is kind, polite, though the price is high<br />talk or chat with friends |
-| home                                | place                | a big living room with a large LCD TV, family watch news together<br />a study room, having many books<br />having a yard, with trees, flowers and dogs |
-| room                                | place                | a large bookshelf for my books, making the room to be a library<br />a blue-color bad and white-painted wall<br />having internet access, it is better to have wireless internet access<br />some pot flowers on my desk |
-| impressing event                    | event                |                                                              |
-| popular sport                       | event                | basketball<br />In China, students start to learn basketball from junior high school<br />There are many sport shops, selling Nike shoes, Adidas shoes and so on<br />on the weekend, many people play basketball in park |
-| festival                            | event                | mid-autumn festival<br />lunar calendar, 15th day of the eighth month<br />moon cake, barbecue, fireworks<br />family gathering |
-| music                               | art                  | Cantonese songs<br />                                        |
-| book                                | art                  | English dictionary, Collins dictionary, Cambridge dictionary<br /> etymology(词源学), word history<br /> Latin, Greek <br />learn how to use the word word cards<br />The Old Man and the Sea written by Ernest Hemingway <br />This novel tells a story about an old fisherman who desperately catches a huge Marlin after three days. However, this Marlin is eaten up by sharks on his way back. This vivid character shows us the kind, optimistic, and persistent spirits. Such characteristics truly help me find my potential and walk me through my difficulties in collage. |
-| film                                | art                  | Coco<br />tells a story about a mexican boy who have a music dream but can't not get the understanding from his fimily. On the day of dead, he stepped into the underworld to find his grandfather, a singer. <br />This story can't happen in the real life, but the characters truly inspirt our thinking about dream, family and love in a vivid way. |
-| museum, theater                     | art                  | serve as exhibition centers for people to know about the history and culture of the country.<br/>{museum}The range of museums is fantastic. There are museums of archaeology and natural history. And because the museums are constantly holding new exhibitions, there is always something different to see.<br/>{theater}Theaters offer people a big place to enjoy a variety of operas and plays of different regions. Even the world's best group come occasionally.<br/>Meanwhile, the building of the museums and theaters will enhance the cultural exchange between countries. |
-| how to use free time                | personal development | go to a concert, listen to music<br />read a novel, learn about Japanese history<br />play basketball with friends |
-| important decision                  | personal development | try to do something you have never experienced before<br /> eg. learn swimming<br /> |
-| experience                          | personal development |                                                              |
-| personal dream                      | personal development |                                                              |
-| money                               | job                  | enable people to do whatever they want, but there are some things money can’t buy<br />health, love, family relationship, happiness<br />making money isn’t the only reason for working<br />fullfill the dream<br />don’t lost yourself and just follow the mainstream blindly<br />arrange time well, don’t be a workaholic<br />relaxing invigorates the body and mind |
-| the job you like                    | job                  | an entrapreneur<br />make ideas into realistics<br />beneficial to the public |
-| teamwork, individual                | job                  | depend on case<br /><br />{teamwork} study group, discussion<br /> |
-| the location(size) of school, class | education            | {in the contryside(small school, classroom)}<br />nice environment, cheap house rent<br />having more access to exercise, running, jogging and swimming<br />no much temptation, easily focus on studying<br />{in the city(big school, classroom)}<br />more resources, like large libraries, modern facilities and computers<br />diverse people, exchange opinions<br />mass entertainment and recreation<br />more activaties and exhibitions |
-| music art class                     | education            | provide entertainment for people. <br />present us with insight into the intenal and universal nature of humanity<br />the process of exploring music and art can develop students' creativity and their ability of expressing their own thoughts in a unique way. |
-| PE class                            | education            |                                                              |
-| online class                        | education            | convenient, lost cost<br />learn anytime and anywhere<br />quickly and widely spread knowledge<br />lack interaction with teachers and classmates<br />hard to take care students with special need<br />hard for teachers to grade students |
-| wide vs. specific                   | education            | wide:expend the knowledge and improve the understanding of differrent topics.<br />specific: if you are expolring in a specific science front, you have to focus on the latest advances in this area. |
-| TV, phone, network                  | media                |                                                              |
-| network vs. book                    | technology           |                                                              |
-|                                     |                      |                                                              |
+| Category                            | Tag                  |                                                              | Exmaple |
+| ----------------------------------- | -------------------- | ------------------------------------------------------------ | ------- |
+| friend                              | People               | John(人名)<br />high school classmate <br />like playing basketball and NBA<br />can't swim <br />live near me <br />be good at English, want to be a English teacher |         |
+| leader, teacher, parent             | people               | John<br />class teacher(班主任) <br />{patient}: teach me how to control the temper <br />{kind}: help people find their potential, give me the courage challenge new things<br />讲帮助你度过了什么困难: When I leaved my hometown and entered the collage, I found myself difficult to catch up with my peers and felt stressful. I consulted my class teacher about my concern and she…<br />{organized}: help me figure out a plan for the future <br />{responsible}: never throw the responsibility to the followers and set a example for me <br />{polite}: treat each other equally, having no discrimination <br />honest: |         |
+| hero                                | people               | 1. Taylor Swift(TPO 41 Task 1)<br />2. Elon Musk, a legendary entrepreneur<br />ambitious: found epochal companies, like Paypal, SpaceX, and Tesla<br /> |         |
+| country, city                       | place                |                                                              |         |
+| restaurant                          | place                | Japanese resturant, sushi boat style restaurant<br />sushi, oolong tea and ramen<br />enjoy the atmosphere of Japan<br />the clerk is kind, polite, though the price is high<br />talk or chat with friends |         |
+| home                                | place                | a big living room with a large LCD TV, family watch news together<br />a study room, having many books<br />having a yard, with trees, flowers and dogs |         |
+| room                                | place                | a large bookshelf for my books, making the room to be a library<br />a blue-color bad and white-painted wall<br />having internet access, it is better to have wireless internet access<br />some pot flowers on my desk |         |
+| impressing event                    | event                |                                                              |         |
+| popular sport                       | event                | basketball<br />In China, students start to learn basketball from junior high school<br />There are many sport shops, selling Nike shoes, Adidas shoes and so on<br />on the weekend, many people play basketball in park |         |
+| festival                            | event                | mid-autumn festival<br />lunar calendar, 15th day of the eighth month<br />moon cake, barbecue, fireworks<br />family gathering |         |
+| music                               | art                  | Cantonese songs<br />                                        |         |
+| book                                | art                  | English dictionary, Collins dictionary, Cambridge dictionary<br /> etymology(词源学), word history<br /> Latin, Greek <br />learn how to use the word word cards<br />The Old Man and the Sea written by Ernest Hemingway <br />This novel tells a story about an old fisherman who desperately catches a huge Marlin after three days. However, this Marlin is eaten up by sharks on his way back. This vivid character shows us the kind, optimistic, and persistent spirits. Such characteristics truly help me find my potential and walk me through my difficulties in collage. |         |
+| film                                | art                  | Coco<br />tells a story about a mexican boy who have a music dream but can't not get the understanding from his fimily. On the day of dead, he stepped into the underworld to find his grandfather, a singer. <br />This story can't happen in the real life, but the characters truly inspirt our thinking about dream, family and love in a vivid way. |         |
+| museum, theater                     | art                  | serve as exhibition centers for people to know about the history and culture of the country.<br/>{museum}The range of museums is fantastic. There are museums of archaeology and natural history. And because the museums are constantly holding new exhibitions, there is always something different to see.<br/>{theater}Theaters offer people a big place to enjoy a variety of operas and plays of different regions. Even the world's best group come occasionally.<br/>Meanwhile, the building of the museums and theaters will enhance the cultural exchange between countries. |         |
+| how to use free time                | personal development | go to a concert, listen to music<br />read a novel, learn about Japanese history<br />play basketball with friends |         |
+| important decision                  | personal development | try to do something you have never experienced before<br /> eg. learn swimming<br /> |         |
+| experience                          | personal development |                                                              |         |
+| personal dream                      | personal development |                                                              |         |
+| money                               | job                  | enable people to do whatever they want, but there are some things money can’t buy<br />health, love, family relationship, happiness<br />making money isn’t the only reason for working<br />fullfill the dream<br />don’t lost yourself and just follow the mainstream blindly<br />arrange time well, don’t be a workaholic<br />relaxing invigorates the body and mind |         |
+| the job you like                    | job                  | an entrapreneur<br />make ideas into realistics<br />beneficial to the public |         |
+| teamwork, individual                | job                  | depend on case<br /><br />{teamwork} study group, discussion<br /> |         |
+| the location(size) of school, class | education            | {in the contryside(small school, classroom)}<br />nice environment, cheap house rent<br />having more access to exercise, running, jogging and swimming<br />no much temptation, easily focus on studying<br />{in the city(big school, classroom)}<br />more resources, like large libraries, modern facilities and computers<br />diverse people, exchange opinions<br />mass entertainment and recreation<br />more activaties and exhibitions |         |
+| music art class                     | education            | provide entertainment for people. <br />present us with insight into the intenal and universal nature of humanity<br />the process of exploring music and art can develop students' creativity and their ability of expressing their own thoughts in a unique way. |         |
+| PE class                            | education            |                                                              |         |
+| online class                        | education            | convenient, lost cost<br />learn anytime and anywhere<br />quickly and widely spread knowledge<br />lack interaction with teachers and classmates<br />hard to take care students with special need<br />hard for teachers to grade students |         |
+| wide vs. specific                   | education            | wide:expend the knowledge and improve the understanding of differrent topics.<br />specific: if you are expolring in a specific science front, you have to focus on the latest advances in this area. |         |
+| TV, phone, network                  | media                |                                                              |         |
+| network vs. book                    | technology           |                                                              |         |
+|                                     |                      |                                                              |         |
 
 ## TOEFL口语想考什么?
 
@@ -273,6 +273,45 @@ First of all, I like to be in a quiet place while studying. If I study in a grou
 Furthermore,  I’d like to think independently. Studying individually can give me enough time to develop my own ideas. When studying in a group, I’m afraid I will be distracted by other’s opinions and thoughts.
 Like last week	, I worked in a group to solve math problems. It turned out that many problems were solved by others not by myself. I felt very unhappy about it.
   ````
+
+> Many universities now offer academic courses over the Internet. However, some people still prefer learning in traditional classrooms. Which do you think is better? Explain why. 
+
+Tag: `online class`
+
+```
+I think learning in traditional classrooms is better.
+First of all, I think there are more personal interactions in traditional classrooms than in online courses. Students can have in-person discussions while they can see each other. Possibly, people can become friends in class, whereas in the online courses, students don’t know each other, and they miss a chance of making friends.
+Also, in a traditional classroom, if a student doesn’t understand a concept or an idea, they can raise their hand to ask the teacher directly. While in an online course, there is no chance for students to throw out questions immediately. 
+```
+
+
+
+> Do you agree or disagree with the following statement? Environmental protection is as important as economic development. Use details and examples to support your response. 
+
+Tag: `environment`
+
+```
+I think the environment protection is definitely as important as economic development, if not, more important than the latter one.
+We have already wasted and destroyed big amounts of natural resources. We must preserve the earth for our children and grandchildren. In any case, poverty and environmental damage are often linked. For example, polluted water can lead to crop failures.
+Another reason why the environment is so important is because it is a source of natural beauty. Research shows that nature plays a key role in human’s both physical and mental health. Simply speaking, a beautiful and well-protected environment just makes people and their life happier and more enjoyable. 
+```
+
+
+
+> Some people believe that historic sites should be open to the public. Others believe that historic sites shoud only be used for academic research by experts and researchers.
+
+Tag: `art`
+
+思路: 公众了解相关知识(列举) + 省钱(描述过程)
+
+```
+I believe that historic sites should be open to the public. 
+Coz first, those sites provide a great outlet for the people to learn historical and cultural knowledge. 
+By visiting those sites, people can know what food people ate in the past, what tools they used when foraging and what was people's lift in different empires, which is benenicial to both children and adults.
+Furthermore, this bring ecnomic benifits. 
+By opening to the general public, visitors will beat tracted and will pay ticket money for those sites, then those sites will have more money to do the maintenance and repairs, which will protect those historical sites better in return.
+```
+
 
 
 

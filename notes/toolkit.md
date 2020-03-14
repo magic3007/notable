@@ -2,7 +2,7 @@
 tags: [Notebooks/Cheatsheet]
 title: toolkit
 created: '2020-02-19T09:48:53.975Z'
-modified: '2020-03-06T09:47:45.507Z'
+modified: '2020-03-09T09:33:17.854Z'
 ---
 
 # toolkit
@@ -42,6 +42,7 @@ modified: '2020-03-06T09:47:45.507Z'
 
 - [matplotlib]()
 
+- [JFLAP](http://www.jflap.org/): a software for experimenting with formal languages topics including NFA, nondeterministic pushdown automata, multi-tape Turing machines, several types of grammars, parsing, and L-systems. 
 
 ### Mathematics Document
 
@@ -50,16 +51,13 @@ modified: '2020-03-06T09:47:45.507Z'
 - [MhChem]():  a LaTeX language extension supported by KaTeX, it is used for writing chemical expressions.
 
 - [AsciiMath](): a language for writing mathematical expressions using only ASCII characters.
-inline: &e = mc^2&
-block: &&e = mc^2&&
-Code Block:
-```asciimath
-e = mc^2
-```
 
 ### proxy
 
-- [proxychains-ng](https://github.com/rofl0r/proxychains-ng): redirect the TCP connections through SOCKS4a/5 or HTTP proxies, however it supports TCP only (no UDP/ICMP etc).
+- [proxychains-ng](https://github.com/rofl0r/proxychains-ng): redirect the TCP connections through SOCKS4a/5 or HTTP proxies(no HTTPS), however it supports TCP only (no UDP/ICMP etc).
+
+-  [proxychains](https://github.com/haad/proxychains): a tool that forces any TCP connection made by any given application to follow through proxy like TOR or any other SOCKS4, SOCKS5 or HTTP(S) proxy. Supported auth-types: "user/pass" for SOCKS4/5, "basic" for HTTP. 
+- [gost](https://github.com/ginuerzh/gost): GO Simple Tunnel - a simple tunnel written in golang
 
 
 
@@ -67,7 +65,10 @@ e = mc^2
 
 - [Doxygen](http://www.doxygen.nl/): the de facto standard tool for generating documentation from annotated source code.
 
+### downloading
 
+- wget
+- curl
 
 ### Potpourri
 
