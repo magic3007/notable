@@ -3,7 +3,7 @@ attachments: [Clipboard_2020-03-09-16-34-58.png]
 tags: [Notebooks/System]
 title: Learning ELF in X minutes
 created: '2020-03-09T07:26:58.537Z'
-modified: '2020-03-09T10:53:46.808Z'
+modified: '2020-03-15T13:31:26.978Z'
 ---
 
 # Learning ELF in X minutes
@@ -26,7 +26,7 @@ objdump
 # -h : section headers
 # -d : Display assembler contents of executable sections
 # -D : Display assembler contents of all sections
-# -S : ntermix source code with disassembly
+# -S : Intermix source code with disassembly
 # -g : Display debug information in object file
 # -j [section name]: display specified section
 # -t: Display the contents of the symbol table(s)

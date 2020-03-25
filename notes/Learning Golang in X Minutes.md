@@ -2,7 +2,7 @@
 tags: [Notebooks/Programming Languages/Golang]
 title: Learning Golang in X Minutes
 created: '2020-03-10T01:57:00.285Z'
-modified: '2020-03-11T04:18:28.370Z'
+modified: '2020-03-17T09:20:30.897Z'
 ---
 
 # Learning Golang in X Minutes
@@ -16,6 +16,7 @@ modified: '2020-03-11T04:18:28.370Z'
 - source code: www.golang.org/src/pkg/
 
 - https://www.kancloud.cn/liupengjie/go/570004
+
 
 ## Types
 
@@ -90,6 +91,44 @@ func main(){
 }
 ```
 
+*Transformation between Variadic Functions & slice*
+If you already have multiple args in a slice, apply them to a variadic function using `func(slice...)` like this.
+```go
+// [_Variadic functions_](http://en.wikipedia.org/wiki/Variadic_function)
+// can be called with any number of trailing arguments.
+// For example, `fmt.Println` is a common variadic
+// function.
+
+package main
+
+import "fmt"
+
+// Here's a function that will take an arbitrary number
+// of `int`s as arguments.
+func sum(nums ...int) {
+	fmt.Print(nums, " ")
+	total := 0
+	for _, num := range nums {
+		total += num
+	}
+	fmt.Println(total)
+}
+
+func main() {
+
+	// Variadic functions can be called in the usual way
+	// with individual arguments.
+	sum(1, 2)
+	sum(1, 2, 3)
+
+	// If you already have multiple args in a slice,
+	// apply them to a variadic function using
+	// `func(slice...)` like this.
+	nums := []int{1, 2, 3, 4}
+	sum(nums...)
+}
+
+```
 ### maps
 Here's an example of map in Go:
 ```go
@@ -313,6 +352,20 @@ func (m *Multishape) area (area float64){
     area += s.area()
   }
 }
+```
+
+*from super interface/struct to derived interface/struct*
+```go
+type User struct {
+    	Name string
+    	Id  string
+    }
+
+var b interface{}
+b = User{"K3vin", "kev"}
+if bUser, ok := b.(User); ok {
+		...
+	}
 ```
 
 **reflect**:

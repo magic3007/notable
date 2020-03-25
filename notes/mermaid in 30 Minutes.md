@@ -2,7 +2,7 @@
 tags: [markdown, Notebooks/Cheatsheet]
 title: mermaid in 30 Minutes
 created: '2020-02-29T11:02:31.814Z'
-modified: '2020-03-08T14:08:46.588Z'
+modified: '2020-03-20T15:53:22.265Z'
 ---
 
 # mermaid in 30 Minutes
@@ -279,6 +279,6 @@ pie
 # Resources
 
 - https://mermaidjs.github.io/#/
-- https://entitycode.com/
+-     
 - https://support.typora.io/Draw-Diagrams-With-Markdown/
 

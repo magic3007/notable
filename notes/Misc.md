@@ -2,7 +2,7 @@
 tags: [Notebooks/Programming Languages/Java]
 title: Misc
 created: '2020-02-24T14:22:02.719Z'
-modified: '2020-03-02T12:22:58.820Z'
+modified: '2020-03-20T14:45:14.249Z'
 ---
 
 # Misc
@@ -13,3 +13,10 @@ modified: '2020-03-02T12:22:58.820Z'
 Class1.isAssignableFrom(Class2) // Class2 extends Class1?
 obj instanceof TypeName         // obj instances of TypeName?
 ```
+- override & overload
+
+  |          | Method Name | Returned Type | Parameters Type              |
+  | -------- | ----------- | ----------- | ------------------------------ |
+  | override | same        | The derived relationship must be satisfied | same               |
+  | overload | same        | could be the same or different    | different |
+

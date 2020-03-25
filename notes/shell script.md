@@ -2,7 +2,7 @@
 tags: [Notebooks/Cheatsheet]
 title: shell script
 created: '2020-02-18T14:38:52.792Z'
-modified: '2020-02-27T07:31:26.961Z'
+modified: '2020-03-18T15:43:32.800Z'
 ---
 
 # shell script
@@ -249,6 +249,9 @@ for arg in reversed(sys.argv[1:]):
 | loaded once when their definition is read(whenever you change them you will have to reload their definition) | loaded every time they are executed                          |
 | executed in the current shell environment<br />can modify environment variables, e.g. change your current directory | execute in their own process<br />will be passed by value environment variables that have been exported using [`export`](http://man7.org/linux/man-pages/man1/export.1p.html) |
 
+## Misc
+
+- `set -e` = `set -o errexit`: used at the beginning; if any statement returns error, stop this scipt immediately. `set +e` vice versa.
 ## Resource
 - [cesho](cecho – a function to print using different colors in bash): cecho – a function to print using different colors in bash
 
