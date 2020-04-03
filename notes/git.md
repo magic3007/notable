@@ -2,7 +2,7 @@
 tags: [Notebooks/Cheatsheet]
 title: git
 created: '2020-02-06T16:36:53.319Z'
-modified: '2020-03-07T04:16:05.328Z'
+modified: '2020-03-25T16:11:10.131Z'
 ---
 
 # git
@@ -35,9 +35,10 @@ git config --global credential.helper store
 ## push
 
 ```bash
-git push -u <name> <branch>
+git push -u <upstream name> <branch>
 #  -u, --set-upstream     add upstream (tracking) reference
 # eg. git push -u origin master
+git push --mirror # all refs under refs/ (which includes but is not limited to refs/heads/, refs/remotes/, and refs/tags/) be mirrored to the remote repository.
 ```
 
 ## checkout

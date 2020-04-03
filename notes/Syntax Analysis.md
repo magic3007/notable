@@ -3,7 +3,7 @@ attachments: [Clipboard_2020-03-23-22-09-27.png]
 tags: [Notebooks/Compiler]
 title: Syntax Analysis
 created: '2020-02-18T16:10:46.730Z'
-modified: '2020-03-23T14:09:27.675Z'
+modified: '2020-04-03T05:28:32.352Z'
 ---
 
 # Syntax Analysis
@@ -195,9 +195,9 @@ Construction of predictive parsing table
 
 Non-recursive parsing
 
-![image-20200323232447331](Syntax Analysis.assets/image-20200323232447331.png)
+<img src="Syntax Analysis.assets/image-20200323232447331.png" alt="image-20200323232447331" style="zoom:50%;" />
 
-![image-20200323231559078](Syntax Analysis.assets/image-20200323231559078.png)
+<img src="Syntax Analysis.assets/image-20200323231559078.png" alt="image-20200323231559078" style="zoom: 67%;" />
 
 
 
@@ -209,7 +209,7 @@ eg. parsing suffix expression
 
 implement #2 of LL(1): **table-driving non-recursive parsing**
 
-![image-20200323233403350](./Syntax Analysis.assets/image-20200323233403350.png)
+<img src="./Syntax Analysis.assets/image-20200323233403350.png" alt="image-20200323233403350" style="zoom:50%;" />
 
 non-LL(1) grammar:
 
@@ -220,33 +220,39 @@ non-LL(1) grammar:
 
 ### LR(0)
 
-| bottom-up | right derivation |
-| --------- | ---------------- |
-| up-bottom | left derivation  |
+| bottom-up        | up-bottom       |
+| ---------------- | --------------- |
+| right derivation | left derivation |
 
 L: left-to-right
 
 R: right-most
 
-0/1: 1: only look ahead *zero*/*one* step
+0/1: only look ahead *zero*/*one* step
 
+#### What is a handle?
 
+Informally, a “handle” is a substring that matches the body of a production, and whose reduction represents one step along <u>the reverse of a rightmost derivation</u>.
 
-handle:
+<img src="Syntax Analysis.assets/image-20200403135034015.png" alt="image-20200403135034015" style="zoom:50%;" />
 
-![image-20200324164450226](./Syntax Analysis.assets/image-20200324164450226.png)
+#### What is Shift-Reduce Parsing?
 
-shift-reduce parsing(got right-most derivation)
+<img src="Syntax Analysis.assets/image-20200403135444815.png" alt="image-20200403135444815" style="zoom:50%;" />
 
-![image-20200324164901342](Syntax Analysis.assets/image-20200324164901342.png)
+<img src="Syntax Analysis.assets/image-20200403135424185.png" alt="image-20200403135424185" style="zoom:50%;" />
 
-- Shift as long as you can reduce
+*Note: There are context-free grammars for which shift-reduce parsing cannot be used for the conflicts during shift-reduce parsing.*
 
-- handle is always at the top of the stack
+#### Closure of Item Sets
 
-  
+<img src="Syntax Analysis.assets/image-20200403135841966.png" alt="image-20200403135841966" style="zoom:67%;" />
 
-![image-20200324171519993](Syntax Analysis.assets/image-20200324171519993.png)
+#### GOTO Function
+
+<img src="Syntax Analysis.assets/image-20200403140615030.png" alt="image-20200403140615030" style="zoom:67%;" />
+
+#### LR(0) Automation
 
 item: production with dot
 
@@ -254,15 +260,50 @@ a box: closure
 
 shadowed boxes: non-kernel items
 
-| non-kernel items                               | kernel items                                                 |
-| ---------------------------------------------- | ------------------------------------------------------------ |
-| with dot at the  left end, except for S' -> .S | initial state S'  -> .S or that have the dot somewhere other than at the beginning |
+| non-kernel items                              | kernel items                                                 |
+| --------------------------------------------- | ------------------------------------------------------------ |
+| with dot at the left end, except for S' -> .S | initial state S'  -> .S or that have the dot somewhere other than at the beginning |
 
-<img src="Syntax Analysis.assets/image-20200324172005919.png" alt="image-20200324172005919" style="zoom:50%;" />
+![image-20200403135955168](Syntax Analysis.assets/image-20200403135955168.png)
 
-![image-20200324171744070](./Syntax Analysis.assets/image-20200324171744070.png)
+*Note: A automation is not enough to determine reduce/shift behavior.*
 
-r: reduce
+#### LR Parsing Table
 
-s: shift
+#### SLR(Simple LR)-Parsing Table
 
+<img src="Syntax Analysis.assets/image-20200403010705294.png" alt="image-20200403010705294" style="zoom:50%;" />
+
+improved from LR(0) by using <u>FOLLOW</u> to determine shift or reduce: If the new terminal is in the FOLLOW set of the top state of the stack, that reduce, otherwise shift.
+
+> How to judge if a grammar is SLR(1)?
+>
+> In any items set, every two productions have disjointed FOLLOW set. 
+
+![image-20200403001446874](Syntax Analysis.assets/image-20200403001446874.png)
+
+![image-20200403142751578](Syntax Analysis.assets/image-20200403142751578.png)
+
+![image-20200403142803237](Syntax Analysis.assets/image-20200403142803237.png)
+
+#### LR Parsing Algorithm
+
+<img src="Syntax Analysis.assets/image-20200403134633853.png" alt="image-20200403134633853" style="zoom:67%;" />
+
+![image-20200403143735563](Syntax Analysis.assets/image-20200403143735563.png)
+
+### Viable Prefixes & Valid Items
+
+The prefixes of right sentential forms that can appear on the stack of a shift-reduce parser are called **viable prefixes**.
+
+**An item is valid** for a viable prefix if the production of that item is used to generate the handle, and the viable prefix includes all those symbols to the left of the dot, but not those below.
+
+
+
+<img src="Syntax Analysis.assets/image-20200403010955244.png" alt="image-20200403010955244" style="zoom:50%;" />
+
+<img src="Syntax Analysis.assets/image-20200403011023111.png" alt="image-20200403011023111" style="zoom:50%;" />
+
+<img src="Syntax Analysis.assets/image-20200403011129577.png" alt="image-20200403011129577" style="zoom:50%;" />
+
+<img src="Syntax Analysis.assets/image-20200403011320633.png" alt="image-20200403011320633" style="zoom:50%;" />
