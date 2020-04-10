@@ -85,16 +85,16 @@ HTML can be written inside Markdown. The following are some useful HTML tags tha
 
 #### colorful marks
 
-- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) General Purpose
-- ![#c5f015](https://placehold.it/15/c5f015/000000?text=+) Neural Network
-- ![#1589F0](https://placehold.it/15/1589F0/000000?text=+) Graph Processing
-- ![#af62ff](https://placehold.it/15/af62ff/000000?text=+) Bioinformatics
-- ![#0abab5](https://placehold.it/15/0abab5/000000?text=+) Data Analytics
-- ![#ff66cc](https://placehold.it/15/ff66cc/000000?text=+) Associative Computing
-- ![#f4f442](https://placehold.it/15/f4f442/000000?text=+) Automata Computing
-- ![#ece5b8](https://placehold.it/15/ece5b8/000000?text=+) Data Manipulation
-- ![#161616](https://placehold.it/15/161616/000000?text=+) Security
-- ![#003366](https://placehold.it/15/003366/000000?text=+) Others
+-  <img src="https://placehold.it/15/f03c15/000000?text=+" alt="#f03c15" />  General Purpose
+-  <img src="https://placehold.it/15/c5f015/000000?text=+" alt="#c5f015" />  Neural Network
+-  <img src="https://placehold.it/15/1589F0/000000?text=+" alt="#1589F0" />  Graph Processing
+-  <img src="https://placehold.it/15/af62ff/000000?text=+" alt="#af62ff" />  Bioinformatics
+-  <img src="https://placehold.it/15/0abab5/000000?text=+" alt="#0abab5" />  Data Analytics
+-  <img src="https://placehold.it/15/ff66cc/000000?text=+" alt="#ff66cc" />  Associative Computing
+-  <img src="https://placehold.it/15/f4f442/000000?text=+" alt="#f4f442" />  Automata Computing
+-  <img src="https://placehold.it/15/ece5b8/000000?text=+" alt="#ece5b8" />  Data Manipulation
+-  <img src="https://placehold.it/15/161616/000000?text=+" alt="#161616" />  Security
+-  <img src="https://placehold.it/15/003366/000000?text=+" alt="#003366" />  Others
 
 #### Small
 

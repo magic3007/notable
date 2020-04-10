@@ -16,4 +16,4 @@ modified: '2020-02-18T14:50:52.267Z'
 
 
 
-![cache miss](./Memory_Utilization_on_FPGA.assets/v2-cc6b776c9ee81da60a144074820006c3_1200x500.jpg)
+ <img src="./Memory_Utilization_on_FPGA.assets/v2-cc6b776c9ee81da60a144074820006c3_1200x500.jpg" alt="cache miss" /> 

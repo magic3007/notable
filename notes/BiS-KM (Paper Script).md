@@ -21,13 +21,13 @@ modified: '2020-02-28T03:26:32.882Z'
 
 Q1: Bit-Serial Multiplier
 
-![image-20200228142619293](./BiS-KM (Paper Script).assets/image-20200228142619293.png)
+<img src="./BiS-KM (Paper Script).assets/image-20200228142619293.png" alt="image-20200228142619293" style="zoom:67%;" />
 
 Q2: Bit-Serial DSP架构
 
 <img src="./BiS-KM (Paper Script).assets/image-20200228142651665.png" alt="image-20200228142651665" style="zoom:50%;" />
 
-![image-20200228142706968](./BiS-KM (Paper Script).assets/image-20200228142706968.png)
+<img src="./BiS-KM (Paper Script).assets/image-20200228142706968.png" alt="image-20200228142706968" style="zoom:80%;" />
 
 > 用欧式距离是否合算? 资源利用率高吗?
 
@@ -37,11 +37,11 @@ Q2: Bit-Serial DSP架构
 
 我们只关心最值, 时间上只关心点积.
 
-![image-20200228143342615](./BiS-KM (Paper Script).assets/image-20200228143342615.png)
+<img src="./BiS-KM (Paper Script).assets/image-20200228143342615.png" alt="image-20200228143342615" style="zoom:80%;" />
 
 > 现在有两种并行的方式, 样本间并行和特征间并行. 他们的优缺点分别是什么? pipeline的策略又是什么?
 >
-> ![image-20200228143455323](./BiS-KM (Paper Script).assets/image-20200228143455323.png)
+> <img src="./BiS-KM (Paper Script).assets/image-20200228143455323.png" alt="image-20200228143455323" style="zoom:80%;" />
 
 样本间并行: 资源消耗多 M * K = 4096个Bit-Serial Multiplier
 
@@ -49,10 +49,10 @@ Q2: Bit-Serial DSP架构
 
 解决策略是两种的融合
 
-![image-20200228143602691](./BiS-KM (Paper Script).assets/image-20200228143602691.png)
+<img src="./BiS-KM (Paper Script).assets/image-20200228143602691.png" alt="image-20200228143602691" style="zoom:80%;" />
 
 pipeline的策略选择cluster之间pipeline. 最终的架构如下.
 
-![image-20200228143906230](./BiS-KM (Paper Script).assets/image-20200228143906230.png)
+<img src="./BiS-KM (Paper Script).assets/image-20200228143906230.png" alt="image-20200228143906230" style="zoom:80%;" />
 
-![image-20200228143915389](./BiS-KM (Paper Script).assets/image-20200228143915389.png)
+<img src="./BiS-KM (Paper Script).assets/image-20200228143915389.png" alt="image-20200228143915389" style="zoom:80%;" />

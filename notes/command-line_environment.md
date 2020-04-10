@@ -203,11 +203,11 @@ There are many ways to copy files over ssh:
 
 ##### Local Port Forwarding
 
-![Local Port Forwarding](https://i.stack.imgur.com/a28N8.png%C2%A0)
+ <img src="https://i.stack.imgur.com/a28N8.png%C2%A0" alt="Local Port Forwarding" /> 
 
 ##### Remote Port Forwarding
 
-![Remote Port Forwarding](https://i.stack.imgur.com/4iK3b.png%C2%A0)
+ <img src="https://i.stack.imgur.com/4iK3b.png%C2%A0" alt="Remote Port Forwarding" /> 
 
 The most common scenario is local port forwarding.  For example, if we execute `jupyter notebook` in the remote server that listens to the port `8888`. Thus, to forward that to the local port `9999`, we would do `ssh -L 9999:localhost:8888 foobar@remote_server` and then navigate to `locahost:9999` in our local machine.
 

@@ -42,7 +42,7 @@ QOE.
 
 ### minimizing the numbers of states in DFA
 
-![image-20200308200612474](./Regex=NFA=DFA.assets/image-20200308200612474.png)
+ <img src="./Regex=NFA=DFA.assets/image-20200308200612474.png" alt="image-20200308200612474" /> 
 
 Time complexity: $O(n\log n)$, where $n$ is the number of states in DFA.
 

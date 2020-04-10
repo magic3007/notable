@@ -205,10 +205,10 @@ void release_fork(int pid){
 
 第一种解法会设置一个must_wait变量, 这个变量会有等待的进程和最后一个离开的进程设置.
 
-![image-20200105222119143](./PV.assets/image-20200105222119143.png)
+ <img src="./PV.assets/image-20200105222119143.png" alt="image-20200105222119143" /> 
 
 第二种解法是接力棒传递模式(pass the baton). 接力棒是信号量block, 在接力棒没有传完之前(`waiting>0 && !must_wait`), 互斥锁`mutex`不会释放.
 
-![image-20200105222958364](./PV.assets/image-20200105222958364.png) 
+ <img src="./PV.assets/image-20200105222958364.png" alt="image-20200105222958364" />  
 
 ​		

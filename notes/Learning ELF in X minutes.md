@@ -18,7 +18,7 @@ program table: optional in linking view
 
 section table: optional in execution view
 
-![img](./Learning ELF in X minutes.assets/417313-20181012154909093-954664315.png)
+ <img src="./Learning ELF in X minutes.assets/417313-20181012154909093-954664315.png" alt="img" /> 
 
 ```bash
 objdump 

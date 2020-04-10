@@ -46,4 +46,4 @@ there are three patterns for multi-GPU programming: 1thread<->multi-GPU, multi-t
 
 *code pattern for 1thread<->multi-GPU*:
 
-![image-20200312150708128](./Multi-GPU Programming.assets/image-20200312150708128.png)
+ <img src="./Multi-GPU Programming.assets/image-20200312150708128.png" alt="image-20200312150708128" /> 

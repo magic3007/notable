@@ -99,7 +99,7 @@ CFG不能检查标识符的声明是否先于引用, 也不能检查形参和实
 
 “else” matches with closest previous unmatched "then"
 
-![image-20200323221129107](./Syntax Analysis.assets/image-20200323221129107.png)
+ <img src="./Syntax Analysis.assets/image-20200323221129107.png" alt="image-20200323221129107" /> 
 
 #### strings with the same numbers of ‘a’ & ‘b’
 
@@ -139,7 +139,7 @@ S -> Aa | b
 
 A -> Aad | bd | $\epsilon$
 
-![image-20200323222607266](./Syntax Analysis.assets/image-20200323222607266.png)
+ <img src="./Syntax Analysis.assets/image-20200323222607266.png" alt="image-20200323222607266" /> 
 
 ##### left factoring
 
@@ -159,7 +159,7 @@ if A can be the rightmost, $ in FOLLOW(A)
 
 if A =*> e, then e in FIRST(A)
 
-![image-20200323224042666](./Syntax Analysis.assets/image-20200323224042666.png)
+ <img src="./Syntax Analysis.assets/image-20200323224042666.png" alt="image-20200323224042666" /> 
 
 <img src="./Syntax Analysis.assets/image-20200323224133817.png" alt="image-20200323224133817" style="zoom:50%;" />
 
@@ -169,7 +169,7 @@ how to find Follow(A)?
 
 2. S -> … A B1 B2 … Bk && all Bi have $\epsilon$ in their Frist set: add Follow(S)
 
-![image-20200323230912762](./Syntax Analysis.assets/image-20200323230912762.png)
+ <img src="./Syntax Analysis.assets/image-20200323230912762.png" alt="image-20200323230912762" /> 
 
 ### LL(1)
 
@@ -267,7 +267,7 @@ shadowed boxes: non-kernel items
 | --------------------------------------------- | ------------------------------------------------------------ |
 | with dot at the left end, except for S' -> .S | initial state S'  -> .S or that have the dot somewhere other than at the beginning |
 
-![image-20200403135955168](./Syntax Analysis.assets/image-20200403135955168.png)
+ <img src="./Syntax Analysis.assets/image-20200403135955168.png" alt="image-20200403135955168" /> 
 
 *Note: A automation is not enough to determine reduce/shift behavior.*
 
@@ -283,17 +283,17 @@ improved from LR(0) by using <u>FOLLOW</u> to determine shift or reduce: If the 
 >
 > In any items set, every two productions have disjointed FOLLOW set. 
 
-![image-20200403001446874](./Syntax Analysis.assets/image-20200403001446874.png)
+ <img src="./Syntax Analysis.assets/image-20200403001446874.png" alt="image-20200403001446874" /> 
 
-![image-20200403142751578](./Syntax Analysis.assets/image-20200403142751578.png)
+ <img src="./Syntax Analysis.assets/image-20200403142751578.png" alt="image-20200403142751578" /> 
 
-![image-20200403142803237](./Syntax Analysis.assets/image-20200403142803237.png)
+ <img src="./Syntax Analysis.assets/image-20200403142803237.png" alt="image-20200403142803237" /> 
 
 #### LR Parsing Algorithm
 
 <img src="./Syntax Analysis.assets/image-20200403134633853.png" alt="image-20200403134633853" style="zoom:67%;" />
 
-![image-20200403143735563](./Syntax Analysis.assets/image-20200403143735563.png)
+ <img src="./Syntax Analysis.assets/image-20200403143735563.png" alt="image-20200403143735563" /> 
 
 ### Viable Prefixes & Valid Items
 
@@ -316,25 +316,25 @@ The prefixes of right sentential forms that can appear on the stack of a shift-r
 non-SLR grammar examples: Example 4.48(left-value & right-value)
 
 ACTION(I2, =) reduce-shift conflict
-![image-20200408101546027](./Syntax Analysis.assets/image-20200408101546027.png)
+ <img src="./Syntax Analysis.assets/image-20200408101546027.png" alt="image-20200408101546027" /> 
 
 #### Constructing LR(1) Sets of Items
 
-![image-20200408103817709](./Syntax Analysis.assets/image-20200408103817709.png)
+ <img src="./Syntax Analysis.assets/image-20200408103817709.png" alt="image-20200408103817709" /> 
 
-![image-20200408103838225](./Syntax Analysis.assets/image-20200408103838225.png)
+ <img src="./Syntax Analysis.assets/image-20200408103838225.png" alt="image-20200408103838225" /> 
 
-![image-20200408103932926](./Syntax Analysis.assets/image-20200408103932926.png)
+ <img src="./Syntax Analysis.assets/image-20200408103932926.png" alt="image-20200408103932926" /> 
 
 #### LR(1) Automation
 
-![image-20200408104024992](./Syntax Analysis.assets/image-20200408104024992.png)
+ <img src="./Syntax Analysis.assets/image-20200408104024992.png" alt="image-20200408104024992" /> 
 
 #### LR(1) Parsing Table
 
-![image-20200408104516026](./Syntax Analysis.assets/image-20200408104516026.png)
+ <img src="./Syntax Analysis.assets/image-20200408104516026.png" alt="image-20200408104516026" /> 
 
-![image-20200408104244571](./Syntax Analysis.assets/image-20200408104244571.png)
+ <img src="./Syntax Analysis.assets/image-20200408104244571.png" alt="image-20200408104244571" /> 
 
 ### LALR(lookahead-LR)
 
@@ -348,19 +348,19 @@ replace all states having the same core with their union **if no conflicts arise
 
 only look at kernel item(initial state S'  -> .S or that have the dot somewhere other than at the beginning)
 
-​	![image-20200408105610208](./Syntax Analysis.assets/image-20200408105610208.png)
+​	 <img src="./Syntax Analysis.assets/image-20200408105610208.png" alt="image-20200408105610208" /> 
 
 represent LR(0) items:
 
-![image-20200408105744324](./Syntax Analysis.assets/image-20200408105744324.png)
+ <img src="./Syntax Analysis.assets/image-20200408105744324.png" alt="image-20200408105744324" /> 
 
 propagation & spontaneous generation of lookaheads:
 
-![image-20200408110934856](./Syntax Analysis.assets/image-20200408110934856.png)
+ <img src="./Syntax Analysis.assets/image-20200408110934856.png" alt="image-20200408110934856" /> 
 
-![image-20200408110011113](./Syntax Analysis.assets/image-20200408110011113.png)
+ <img src="./Syntax Analysis.assets/image-20200408110011113.png" alt="image-20200408110011113" /> 
 
-![image-20200408105443096](./Syntax Analysis.assets/image-20200408105443096.png)
+ <img src="./Syntax Analysis.assets/image-20200408105443096.png" alt="image-20200408105443096" /> 
 
 INIT: spontaneously generated
 

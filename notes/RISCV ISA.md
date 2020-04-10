@@ -15,7 +15,7 @@ modified: '2020-03-09T04:53:50.834Z'
 
 ## Instruction Length Encoding
 
-![image-20200309125427064](./RISCV ISA.assets/image-20200309125427064.png)
+ <img src="./RISCV ISA.assets/image-20200309125427064.png" alt="image-20200309125427064" /> 
 
 ## Register State
 
@@ -26,7 +26,7 @@ modified: '2020-03-09T04:53:50.834Z'
 
 ## Base Instruction Formats
 
-![image-20200309125810314](./RISCV ISA.assets/image-20200309125810314.png)
+ <img src="./RISCV ISA.assets/image-20200309125810314.png" alt="image-20200309125810314" /> 
 
 *features*:
 
@@ -42,9 +42,9 @@ modified: '2020-03-09T04:53:50.834Z'
   - the target address is obtained by adding imm and register
   - *Note that `JALR` don’t treat 12-bit imm as multiaples of 2 bytes*
 
-![ image-20200309132628639](./RISCV ISA.assets/image-20200309132628639.png)
+ <img src="./RISCV ISA.assets/image-20200309132628639.png" alt=" image-20200309132628639" /> 
 
-![image-20200309133308578](./RISCV ISA.assets/image-20200309133308578.png)
+ <img src="./RISCV ISA.assets/image-20200309133308578.png" alt="image-20200309133308578" /> 
 
 - Both `JAL` and `JALR` store the address of the instruction following the jump, namely `PC+4` into register `rd`
 
@@ -65,7 +65,7 @@ modified: '2020-03-09T04:53:50.834Z'
 >
 > - `JALR`: push/pop a RAS as shown following:
 >
->   ![image-20200309134453544](./RISCV ISA.assets/image-20200309134453544.png)
+>    <img src="./RISCV ISA.assets/image-20200309134453544.png" alt="image-20200309134453544" /> 
 
 ## Memory Model
 

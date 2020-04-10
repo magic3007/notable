@@ -27,11 +27,11 @@ modified: '2020-02-18T14:32:07.321Z'
 
 [System Design]
 
-![image-20200122154747296](./Disaggregrated System Lecture Script.assets/image-20200122154747296.png)
+ <img src="./Disaggregrated System Lecture Script.assets/image-20200122154747296.png" alt="image-20200122154747296" /> 
 
 *<u>vNode Server</u>* is exposed to users and is seen as a complete machine. A vNode Server consists of multiple pComponent, mComponent and sComponent, which are connected by network.
 
-![image-20200122155721053](./Disaggregrated System Lecture Script.assets/image-20200122155721053.png)
+ <img src="./Disaggregrated System Lecture Script.assets/image-20200122155721053.png" alt="image-20200122155721053" /> 
 
 **<u>*pComponent*</u>**: It will mainly focus on the process/thread scheduling, system calls and other functions. LegoOS is compatible with the Linux ABI interface. The user's program will only run in the user space of pComponent. Cache (L1, L2, L3, ExCache) will be left on pComponent. In order to reduce the overhead of network access memory, a layer of ExCache with a size of 4G will be left in pComponent. If ExCache is missed, it will access mComponent. ExCache Provide FIFO or LRU control strategy.
 
@@ -51,7 +51,7 @@ Its data types are mainly composed of three types:
 
 <u>*Memory Log File*</u>. The mComponent will persist the log file of the memory to the sComponent.
 
-![image-20200122160049566](./Disaggregrated System Lecture Script.assets/image-20200122160049566.png)
+ <img src="./Disaggregrated System Lecture Script.assets/image-20200122160049566.png" alt="image-20200122160049566" /> 
 
 ***<u>sComponent</u>***:
 

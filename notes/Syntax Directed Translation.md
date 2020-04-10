@@ -36,13 +36,13 @@ Attach program fragments to the productions of a grammar.
 
 [use inherited attribute in non-left-recursive version]
 
-![image-20200408223958130](./Syntax Directed Translation.assets/image-20200408223958130.png)
+ <img src="./Syntax Directed Translation.assets/image-20200408223958130.png" alt="image-20200408223958130" /> 
 
 
 
 ### dependency graph
 
-![image-20200408224139373](./Syntax Directed Translation.assets/image-20200408224139373.png)
+ <img src="./Syntax Directed Translation.assets/image-20200408224139373.png" alt="image-20200408224139373" /> 
 
 - necessity: no circle
 
@@ -58,11 +58,11 @@ Attach program fragments to the productions of a grammar.
 
 [variable declaration]
 
-![image-20200408225337759](./Syntax Directed Translation.assets/image-20200408225337759.png)
+ <img src="./Syntax Directed Translation.assets/image-20200408225337759.png" alt="image-20200408225337759" /> 
 
 A dependency graph for the input string `float id1, id2, id3` 
 
-![image-20200408225510006](./Syntax Directed Translation.assets/image-20200408225510006.png)
+ <img src="./Syntax Directed Translation.assets/image-20200408225510006.png" alt="image-20200408225510006" /> 
 
 Node 6,8,10 are the dummy attributes that represent the application of the function `addType`.
 
@@ -70,7 +70,7 @@ Node 6,8,10 are the dummy attributes that represent the application of the funct
 
 [array type]
 
-![image-20200408225827680](./Syntax Directed Translation.assets/image-20200408225827680.png)
+ <img src="./Syntax Directed Translation.assets/image-20200408225827680.png" alt="image-20200408225827680" /> 
 
 
 
@@ -82,6 +82,6 @@ syntax tree:
 | -------- | --------------------------------------------- |
 | Abstract | nodes represent  operator                     |
 
-![image-20200408230025833](./Syntax Directed Translation.assets/image-20200408230025833.png)
+ <img src="./Syntax Directed Translation.assets/image-20200408230025833.png" alt="image-20200408230025833" /> 
 
-![image-20200408230429074](./Syntax Directed Translation.assets/image-20200408230429074.png)
+ <img src="./Syntax Directed Translation.assets/image-20200408230429074.png" alt="image-20200408230429074" /> 
