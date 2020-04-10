@@ -2,7 +2,7 @@
 tags: [Notebooks/Cheatsheet]
 title: toolkit
 created: '2020-02-19T09:48:53.975Z'
-modified: '2020-03-09T09:33:17.854Z'
+modified: '2020-04-04T02:32:14.526Z'
 ---
 
 # toolkit
@@ -20,13 +20,14 @@ modified: '2020-03-09T09:33:17.854Z'
 - [shellcheck](https://github.com/koalaman/shellcheck): a static analysis tool for shell scripts
 - [TLDR pages](https://tldr.sh/): Simplified and community-driven man pages
 - [cheat.sh](https://github.com/chubin/cheat.sh): the only cheat sheet you need
+- [kmdr-cli](https://github.com/ediardo/kmdr-cli): 🧠The CLI learning tool for explaining commands from your terminal
 - [fd](https://github.com/sharkdp/fd): A simple, fast and user-friendly alternative to 'find'
 - [rg](https://github.com/BurntSushi/ripgrep): ripgrep recursively searches directories for a regex pattern
 - [fzf](https://github.com/junegunn/fzf):  A command-line fuzzy finder
 - [fishshell](https://fishshell.com/): history-based autosuggestions
 - [fasd](https://github.com/clvv/fasd): offers quick access to files and directories, inspired by autojump, z and v
 - [Environment Modules](https://modules.readthedocs.io/en/latest/): dynamic modification of a user's environment via modulefile
-- [mosh](https://github.com/mobile-shell/mosh): Mobile Shell  
+- [mosh](https://github.com/mobile-shell/mosh): Mobile Shell 
 
 
 

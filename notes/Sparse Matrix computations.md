@@ -34,7 +34,7 @@ modified: '2020-02-18T14:51:15.259Z'
 - Hybrid (HYB) ELL + COO
 - Bit Vector
 
-![img](Acceleration_of_SpMV.assets/41f56ddcgy1fixggqza92j21h60nh78z.jpg)
+![img](./Acceleration_of_SpMV.assets/41f56ddcgy1fixggqza92j21h60nh78z.jpg)
 
 选择稀疏矩阵存储格式的一些经验：
 
@@ -44,7 +44,7 @@ modified: '2020-02-18T14:51:15.259Z'
 4. 根据[Nathan Bell的工作](http://www.bu.edu/pasi/files/2011/01/NathanBell1-10-1000.pdf)，CSR格式在存储稀疏矩阵时非零元素平均使用的字节数(Bytes per Nonzero Entry)最为稳定（float类型约为8.5，double类型约为12.5），而DIA格式存储数据的非零元素平均使用的字节数与矩阵类型有较大关系，适合于Structured Mesh结构的稀疏矩阵（float类型约为4.05，double类型约为8.10），对于Unstructured Mesh以及Random Matrix,DIA格式使用的字节数是CSR格式的十几倍
 5. 从我使用过的一些线性代数计算库来说，COO格式常用于从文件中进行稀疏矩阵的读写，如matrix market即采用COO格式，而CSR格式常用于读入数据后进行稀疏矩阵计算
 
-![image](Acceleration_of_SpMV.assets/042301054214407.png)
+![image](./Acceleration_of_SpMV.assets/042301054214407.png)
 
 ### 索引压缩
 
@@ -66,7 +66,7 @@ modified: '2020-02-18T14:51:15.259Z'
 
 我们也看到了前面的优化过程导致每个矩阵块的运算量并不能保证完全一致，这就造成了最终的SpMV处理时间是由计算最慢的计算单元所决定的。在负载极度不平衡的情况下，负载最重的单元会严重拖慢整个计算过程，所以负载平衡是不能忽视的问题。
 
-![img](Acceleration_of_SpMV.assets/41f56ddcgy1fixg96rb04j210d0f13zx.jpg)
+![img](./Acceleration_of_SpMV.assets/41f56ddcgy1fixg96rb04j210d0f13zx.jpg)
 
 针对这个问题，按照处理方式，大概可以分成两种：
 

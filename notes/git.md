@@ -2,7 +2,7 @@
 tags: [Notebooks/Cheatsheet]
 title: git
 created: '2020-02-06T16:36:53.319Z'
-modified: '2020-03-25T16:11:10.131Z'
+modified: '2020-04-04T13:06:59.747Z'
 ---
 
 # git
@@ -65,10 +65,14 @@ git remote set-url origin <url>.git
 git archive -o latest.zip HEAD
 ```
 
+## submodule
 
-
-
-
+```bash
+#remove
+rm -rf tensorflow 
+vim .gitmodules
+vim .git/config
+rm -rf .git/modules/tensorflow
 ```
 
 

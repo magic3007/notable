@@ -42,8 +42,8 @@ modified: '2020-03-12T07:00:40.920Z'
 
 there are three patterns for multi-GPU programming: 1thread<->multi-GPU, multi-thread<->multi-GPU and multi-process<->multi-GPU.
 
-<img src="Multi-GPU Programming.assets/image-20200312150228153.png" alt="image-20200312150228153" style="zoom:67%;" />
+<img src="./Multi-GPU Programming.assets/image-20200312150228153.png" alt="image-20200312150228153" style="zoom:67%;" />
 
 *code pattern for 1thread<->multi-GPU*:
 
-![image-20200312150708128](Multi-GPU Programming.assets/image-20200312150708128.png)
+![image-20200312150708128](./Multi-GPU Programming.assets/image-20200312150708128.png)

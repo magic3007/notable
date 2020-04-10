@@ -67,7 +67,7 @@ $$
 
 之所以是这样表示, 是因为我们可以引入*Bloch球*表示量子比特, 而此时$$\theta$$和$$\phi$$在Bloch球有类似于极坐标的直观意义, 我们也可以看到此时 $$\vert0\rangle$$ 和 $$\vert1\rangle$$在Bloch球上的位置.
 
-![image-20200130213500077](Quantum-Computing-Primer.assets/image-20200130213500077.png)
+![image-20200130213500077](./Quantum-Computing-Primer.assets/image-20200130213500077.png)
 
 > 由于Bloch球只是一个直观意义, 有几个误区要指出:
 >

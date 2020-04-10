@@ -18,7 +18,7 @@ DFA vs. NFA
 
 $\epsilon-closure$ : move along any $\epsilon$ edge, until converging to a closure, such subset is a state in DFA.
 
-<img src="Regex=NFA=DFA.assets/image-20200308195707448.png" alt="image-20200308195707448" style="zoom:50%;" />
+<img src="./Regex=NFA=DFA.assets/image-20200308195707448.png" alt="image-20200308195707448" style="zoom:50%;" />
 
 ### construct DFA directly from regex expression
 
@@ -42,9 +42,9 @@ QOE.
 
 ### minimizing the numbers of states in DFA
 
-![image-20200308200612474](Regex=NFA=DFA.assets/image-20200308200612474.png)
+![image-20200308200612474](./Regex=NFA=DFA.assets/image-20200308200612474.png)
 
 Time complexity: $O(n\log n)$, where $n$ is the number of states in DFA.
 
-<img src="Regex=NFA=DFA.assets/image-20200308200729538.png" alt="image-20200308200729538" style="zoom:50%;" />
+<img src="./Regex=NFA=DFA.assets/image-20200308200729538.png" alt="image-20200308200729538" style="zoom:50%;" />
 

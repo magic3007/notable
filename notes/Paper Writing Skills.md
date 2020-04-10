@@ -13,4 +13,4 @@ modified: '2020-02-18T14:33:25.312Z'
 
 [categories] proposal,thesis, tutorial/survey/review, poster
 
-![image-20200118135900242](Paper Writing Skills.assets/image-20200118135900242.png)
+![image-20200118135900242](./Paper Writing Skills.assets/image-20200118135900242.png)

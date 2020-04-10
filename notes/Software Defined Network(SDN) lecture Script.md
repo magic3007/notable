@@ -51,7 +51,7 @@ IO-intensive workloads programmable switches
 
    - Unfortunately, the skewed, dynamic nature of real-world workloads make it difficult to provide these guarantees in practice, as popular items are queried far more often than other items, leading to severe imbalances.
 
-   ![Cache performance analysis](Software Defined Network(SDN) lecture Script.assets/netcache-image1.png)
+   ![Cache performance analysis](./Software Defined Network(SDN) lecture Script.assets/netcache-image1.png)
 
 2. <u>Load balancing with small, fast caches</u>
 
@@ -79,7 +79,7 @@ IO-intensive workloads programmable switches
 
 {System Design}
 
-![NetCache architecture](Software Defined Network(SDN) lecture Script.assets/netcache-image2.png)
+![NetCache architecture](./Software Defined Network(SDN) lecture Script.assets/netcache-image2.png)
 
 **switch**: implementing on-path caching for KV items and routing packets
 
@@ -113,7 +113,7 @@ key idea:
 
 - Then use <u>power-of-two-choices</u> to select nodes with lower load access.
 
-  ![img](Software Defined Network(SDN) lecture Script.assets/v2-64d59c3892659a8e1518d90d621610b8_hd.jpg)
+  ![img](./Software Defined Network(SDN) lecture Script.assets/v2-64d59c3892659a8e1518d90d621610b8_hd.jpg)
 
 *<u>`NetChain`: Scale-Free Sub-RTT Coordination</u>*
 

@@ -15,7 +15,7 @@ modified: '2020-03-09T04:53:50.834Z'
 
 ## Instruction Length Encoding
 
-![image-20200309125427064](RISCV ISA.assets/image-20200309125427064.png)
+![image-20200309125427064](./RISCV ISA.assets/image-20200309125427064.png)
 
 ## Register State
 
@@ -26,7 +26,7 @@ modified: '2020-03-09T04:53:50.834Z'
 
 ## Base Instruction Formats
 
-![image-20200309125810314](RISCV ISA.assets/image-20200309125810314.png)
+![image-20200309125810314](./RISCV ISA.assets/image-20200309125810314.png)
 
 *features*:
 
@@ -44,7 +44,7 @@ modified: '2020-03-09T04:53:50.834Z'
 
 ![ image-20200309132628639](./RISCV ISA.assets/image-20200309132628639.png)
 
-![image-20200309133308578](RISCV ISA.assets/image-20200309133308578.png)
+![image-20200309133308578](./RISCV ISA.assets/image-20200309133308578.png)
 
 - Both `JAL` and `JALR` store the address of the instruction following the jump, namely `PC+4` into register `rd`
 

@@ -34,7 +34,7 @@ LSTM中主要包含矩阵乘法，向量求和，激活操作，向量点乘等�
 
    对A来说, 计算访存比为v. A可以看做权重，B看做输入，如果输入"宽度不够"，那么计算访存比较低.
 
-   ![img](Algorithm-Hardware Co-Design for Machine Learning Acceleration.assets/v2-3b87e3c3017bd88af815c5a98aa5f1fc_hd.jpg)
+   ![img](./Algorithm-Hardware Co-Design for Machine Learning Acceleration.assets/v2-3b87e3c3017bd88af815c5a98aa5f1fc_hd.jpg)
 
 2. 列向量 x 行向量
 
@@ -42,7 +42,7 @@ A每次获得nx1列向量，B获得1xn行向量，二者进行叉乘，得到nxn
 
 对A来说, 计算访存比是n. A仅仅需要n个数，就能参与n*n次乘法, 这能够很大缓解带宽瓶颈。但是如果B的宽度较小或者B为向量，那么就会造成计算访存比较低，如何选择需要根据实际情况来决定.
 
-![preview](Algorithm-Hardware Co-Design for Machine Learning Acceleration.assets/v2-5c6929224770d090c6ef3c58d2565517_r.jpg)
+![preview](./Algorithm-Hardware Co-Design for Machine Learning Acceleration.assets/v2-5c6929224770d090c6ef3c58d2565517_r.jpg)
 
 
 
@@ -58,7 +58,7 @@ A每次获得nx1列向量，B获得1xn行向量，二者进行叉乘，得到nxn
 
 CNN中可以进行并行化运算的结构有：输入通道，输出通道，图像卷积. 这其中输出通道之间是没有依赖关系的，而输入通道的结果是需要求和的.
 
-![img](Algorithm-Hardware Co-Design for Machine Learning Acceleration.assets/v2-1bcb8b0133e4172643e9b0dec29f1a03_hd.jpg)
+![img](./Algorithm-Hardware Co-Design for Machine Learning Acceleration.assets/v2-1bcb8b0133e4172643e9b0dec29f1a03_hd.jpg)
 
 输入通道之间需要求和运算，所以使用了加法树. 在进行FPGA设计的时候这是一个需要考虑的问题，输入通道越多，加法树的fan-in越大，那么在高速时钟情况下，不同路径时间的延时就会影响时序性能了.
 
@@ -66,13 +66,13 @@ CNN中可以进行并行化运算的结构有：输入通道，输出通道，�
 
 因此输入输出通道的并行数收到了网络层大小以及fan-in和fan-out的限制，不可能太大. 。有没有什么方法可以降低fan-in和fan-out呢？如果将输入通道的求和也使用累加来实现，那就变成只有一个PE完成卷积运算以及不同通道的求和。但是一个PE却降低了并行度，那么可以想到增加串行的PE数量来增加输入并行度，即演变为一列PE来实现输入通道求和。由于PE排序上的空间限制，导致后边一个PE的计算相比于前一个PE要有1个周期延时，如果将数据从从PE间的移动打一拍，那正好可以在第二个PE计算出来的同时完成和前一个PE的求和，这就是脉动的关键所在.
 
-![img](Algorithm-Hardware Co-Design for Machine Learning Acceleration.assets/v2-bb62e8159b521883536c45720e57fa47_hd.jpg)
+![img](./Algorithm-Hardware Co-Design for Machine Learning Acceleration.assets/v2-bb62e8159b521883536c45720e57fa47_hd.jpg)
 
 增加并行度还需要继续探索图像卷积, 首先我们想到卷积不是多个像素和卷积核进行乘法嘛，那么我们也将这些乘法并行起来就可以啦。但是这样存在一个问题就是：卷积核大小是不固定的，比如3x3卷积核中9个乘法被同时执行，那么等到了1x1卷积核，就会只有1个乘法器被使用，降低了乘法器利用率.
 
 并行运算最好找到不存在依赖关系的运算。每行像素的输出是并行的，没有依赖关系的。那么就可以同时进行多行的卷积运算，而一个卷积核内的乘法和加法就可以用一个乘法器和累加器来做，这样就能适应不同卷积核大小的运算.
 
-![img](Algorithm-Hardware Co-Design for Machine Learning Acceleration.assets/v2-6c38493bb157868a7302e82d3bb10744_b.webp)
+![img](./Algorithm-Hardware Co-Design for Machine Learning Acceleration.assets/v2-6c38493bb157868a7302e82d3bb10744_b.webp)
 
 
 
@@ -80,7 +80,7 @@ CNN中可以进行并行化运算的结构有：输入通道，输出通道，�
 
 考虑roofline模型, 横坐标是<u>计算访存比</u>, 纵坐标是实际算力.
 
-![img](Algorithm-Hardware Co-Design for Machine Learning Acceleration.assets/v2-a157d39e86b3912bb55f8157f4ab349d_hd.jpg)
+![img](./Algorithm-Hardware Co-Design for Machine Learning Acceleration.assets/v2-a157d39e86b3912bb55f8157f4ab349d_hd.jpg)
 
 一般来说, 在一个CNN中，网络越往后图像大小越小，输入输出通道数量变大，这导致的结果就是计算访存比变低，这个时候FPGA计算资源利用率就会下降.
 
@@ -112,23 +112,23 @@ $$
 
 硬件整体框架基本包括三部分：fetch，execute，result
 
-![img](Algorithm-Hardware Co-Design for Machine Learning Acceleration.assets/v2-2e79142584f3fc05a795291483652d18_hd.jpg)
+![img](./Algorithm-Hardware Co-Design for Machine Learning Acceleration.assets/v2-2e79142584f3fc05a795291483652d18_hd.jpg)
 
 Fetch包含一个简单的DMA引擎，以及一个数据读取调度器，主要用于从DDR中获得指令和数据. 数据被放于片上缓存中，片上缓存和计算单元通过大量走线互联，走线的带宽受到了DDR带宽的限制，而走线带宽取决于计算单元的算力。论文中参数化了这三个变量，可以根据不同平台来进行适配.
 
 Execute是最核心的计算单元，这部分由基本的DPU构成。DPU是专门处理数据乘法和累加的单元，这些DPU相互连接成二维平面结构，专门用于处理矩阵乘法。DPU结构主要由一个与门，求和，移位寄存器，累加器组成。与门和求和结构用于计算1bit矩阵乘法，移位寄存器用于乘以权重系数，累加器是用于大矩阵求和。
 
-![img](Algorithm-Hardware Co-Design for Machine Learning Acceleration.assets/v2-2a52408863c17a794f591813e4905645_hd.jpg)
+![img](./Algorithm-Hardware Co-Design for Machine Learning Acceleration.assets/v2-2a52408863c17a794f591813e4905645_hd.jpg)
 
 一个大矩阵乘法是被分块的，然后每块乘法是用矩阵列x行的形式，这样计算阵列中的每行和每列对应的buffer中的数据都是被多次利用的，并且以广播形式传播到各个单元。这种方式增加了矩阵数据利用率，能够到达缓解搬运带宽。
 
-![preview](Algorithm-Hardware Co-Design for Machine Learning Acceleration.assets/v2-0e88ddd0e06f2c46bf9ca1921ed01be1_r.jpg)
+![preview](./Algorithm-Hardware Co-Design for Machine Learning Acceleration.assets/v2-0e88ddd0e06f2c46bf9ca1921ed01be1_r.jpg)
 
 Result结构和fetch类似，只不过是写入DDR。也是通过DMA引擎来控制对DDR写入。
 
 指令也是依据三种结构来设计成对应指令：fetch，execute，result。创新点主要在指令的pipeline设计上。其通过引入“锁”的机制来实现不同指令之间的依赖关系。用wait来阻塞下一条指令的执行，而用signal来接触wait，触发下一条指令执行。三种指令主要是fetch和result相对于execute的依赖。如果fetch完成，execute可以执行，在执行的同时，fetch可以读取下一次要用的数据，通过这样的流水来减少execute的等待时间。
 
-![img](Algorithm-Hardware Co-Design for Machine Learning Acceleration.assets/v2-0bc32c9d4fba0189e784ee056a186604_hd.jpg)
+![img](./Algorithm-Hardware Co-Design for Machine Learning Acceleration.assets/v2-0bc32c9d4fba0189e784ee056a186604_hd.jpg)
 
 
 
@@ -156,7 +156,7 @@ Result结构和fetch类似，只不过是写入DDR。也是通过DMA引擎来控
 
 方法其实很简单，就是利用数据的二进制表示方法, 这样就将矩阵中每个数都分解成1bit数和一个权重数相乘的形式，而这个权重是2的幂次，在FPGA中可以通过简单移位操作来实现。
 
-![img](Algorithm-Hardware Co-Design for Machine Learning Acceleration.assets/v2-e541b2b88d149cacd486b7a4328b47c7_hd.jpg)
+![img](./Algorithm-Hardware Co-Design for Machine Learning Acceleration.assets/v2-e541b2b88d149cacd486b7a4328b47c7_hd.jpg)
 
 但是这样做也有一个缺点，就是延迟变大了。所以对于特大矩阵乘法来说，这些延迟可以通过增加计算量来弥补。将这种方法进行推广，可以想到用4进制，8进制来进行数据表示，这样对于较大位宽数据来说可以降低延时。但是这样的低价就是增加了LUT资源。比如对于4进制表示，乘法数据为2bit，这个就会需要更多LUT来完成了。如果表示进制更高，比如16进制，那么用乘法器实现就更合适了。
 
@@ -169,7 +169,7 @@ Result结构和fetch类似，只不过是写入DDR。也是通过DMA引擎来控
 
 处理的问题是神经网络<u>剪枝和量化</u>后的权重数据大大减少, 但是权重分布随机由于木桶效应导致计算效率不高.
 
-![img](Algorithm-Hardware Co-Design for Machine Learning Acceleration.assets/v2-842870572fa6aa495fc1545a006a7f62_hd.jpg)
+![img](./Algorithm-Hardware Co-Design for Machine Learning Acceleration.assets/v2-842870572fa6aa495fc1545a006a7f62_hd.jpg)
 
 稀疏数据需要进行稀疏编码.
 
@@ -183,7 +183,7 @@ Result结构和fetch类似，只不过是写入DDR。也是通过DMA引擎来控
 
 二维矩阵分解即SVD, 当维数高于2维的时候用非线性最下平方差(non-linear least squares)的方法.
 
-![img](Algorithm-Hardware Co-Design for Machine Learning Acceleration.assets/v2-d04b65a31ed2ed191203b31c7a0eaae1_hd.jpg)
+![img](./Algorithm-Hardware Co-Design for Machine Learning Acceleration.assets/v2-d04b65a31ed2ed191203b31c7a0eaae1_hd.jpg)
 
 
 
