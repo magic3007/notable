@@ -2,7 +2,7 @@
 tags: [Notebooks/Cheatsheet]
 title: git
 created: '2020-02-06T16:36:53.319Z'
-modified: '2020-04-04T13:06:59.747Z'
+modified: '2020-04-19T10:54:00.292Z'
 ---
 
 # git
@@ -57,6 +57,14 @@ git remote add [<options>] <name> <url>
 # eg. git remote add origin  <url>.git
 
 git remote set-url origin <url>.git
+git branch --set-upstream-to=<origin/branchName>
+
+```
+
+## cherry-pick
+
+```bash
+git cherry-pick <commit id>
 ```
 
 ## archive
