@@ -2,7 +2,7 @@
 tags: [Notebooks/Programming Languages/Golang]
 title: Learning Golang in X Minutes
 created: '2020-03-10T01:57:00.285Z'
-modified: '2020-03-17T09:20:30.897Z'
+modified: '2020-04-12T14:06:50.957Z'
 ---
 
 # Learning Golang in X Minutes
@@ -25,6 +25,15 @@ Go is statically typed programming language. This means that variables always ha
 Go comes with several built-in basic data types: integers(`uint8, uint16, uint32, uint64, int8, int16, int32, and int64`), floating-point numbers, string, boolean and memory unit `byte`.
 
 Go's advanced built-in types consist of arrays, slices and maps.
+
+- https://go101.org/article/type-system-overview.html
+  - Syntax
+      - two forms of type declarations: Type Definitions, Type Alias Declarations
+  - Concept
+      - Composite type
+      - Defined Types vs. Non-Defined Types
+      - Underlying Types
+
 ### array
 ```go
 /* array's difinition pattern:
