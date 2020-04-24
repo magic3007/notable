@@ -85,3 +85,75 @@ syntax tree:
  <img src="./Syntax Directed Translation.assets/image-20200408230025833.png" alt="image-20200408230025833" /> 
 
  <img src="./Syntax Directed Translation.assets/image-20200408230429074.png" alt="image-20200408230429074" /> 
+
+
+
+## Syntax-directed Translation(SDT)
+
+context-free grammar with program fragments embedded within production bodies
+
+| underlying grammar | LL          | LR          |
+| ------------------ | ----------- | ----------- |
+| attribute of SDT   | L-attribute | S-attribute |
+
+![1587717701749](./Syntax Directed Translation.assets/1587717701749.png)
+
+![1587719355554](./Syntax Directed Translation.assets/1587719355554.png)
+
+![1587719505305](./Syntax Directed Translation.assets/1587719505305.png)
+
+implementation for L-Attributed SDT
+
+1. recursive-descent parser
+
+2. on-the-fly generation(optimization of first method)
+3. combined with LL parser
+4. combined with LR parser
+
+### postfix SDT
+
+<u>postfix SDT</u>: all actions are at the end of the body of the production
+
+![1587717967754](./Syntax Directed Translation.assets/1587717967754.png)
+
+postfix SDT could be implemented during LR parsing
+
+![1587718203851](./Syntax Directed Translation.assets/1587718203851.png)
+
+ Not all SDT's can be implemented during one pass for both LL and LR(eg. infix -> prefix expression), except for *postfix SDT* and *L-attribute SDT*. 
+
+A general solution is to build AST and insert virtual action nodes and then scan AST in another pass.
+
+### eliminating left recursion for SDT’s
+
+![1587719013557](./Syntax Directed Translation.assets/1587719013557.png)
+
+![1587719026371](./Syntax Directed Translation.assets/1587719026371.png)
+
+![1587719040757](./Syntax Directed Translation.assets/1587719040757.png)
+
+### recursive-descent parser of L-attribute SDD's
+
+![1587719898534](./Syntax Directed Translation.assets/1587719898534.png)
+
+![1587719834737](./Syntax Directed Translation.assets/1587719834737.png)
+
+### on-the-fly of L-attribute SDD's
+
+ generate the code **on-the-fly**, rather than computing it as an attribute  
+
+<u>**main attributes**</u>:
+
+![1587720083058](./Syntax Directed Translation.assets/1587720083058.png)
+
+We could **emit** the non-main-attribute elements of the concatenations during pass!
+
+![1587720312313](./Syntax Directed Translation.assets/1587720312313.png)
+
+### LR Parsing of L-Attributed SDD's
+
+![1587720773024](./Syntax Directed Translation.assets/1587720773024.png)
+
+![1587720978041](./Syntax Directed Translation.assets/1587720978041.png)
+
+![1587721121386](./Syntax Directed Translation.assets/1587721121386.png)
