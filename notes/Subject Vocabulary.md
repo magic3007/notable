@@ -2,7 +2,7 @@
 tags: [Notebooks/English/Vocabulary]
 title: Subject Vocabulary
 created: '2020-01-25T13:52:29.113Z'
-modified: '2020-02-18T14:23:14.068Z'
+modified: '2020-04-24T09:49:51.175Z'
 ---
 
 # Subject Vocabulary 
@@ -73,27 +73,4 @@ modified: '2020-02-18T14:23:14.068Z'
 | cluster                          |                                                              | 星团       |
 | solar corona                     | corona的本意是"华", 即透过霾或薄云能看到的天体所围绕的有微弱颜色的发光的环, 与crown(皇冠)同源<br />相关词:<br />coronavirus 日冕形病毒,冠状病毒 | 日冕       |
 
-## Record
-
-| Time              | Memo | Score | URL              |
-| ----------------- | ---- | ----- | ---------------- |
-| 01/27/2020 3:21PM |      | 7/10  | TPO 08 Passage 3 |
-| 01/27/2020 4:50PM |      | 9/10  | TPO 16 Passage 2 |
-| 01/27/2020 5:11PM |      | 7/10  | TPO 22 Passage 1 |
-|                   |      |       |                  |
-|                   |      |       |                  |
-|                   |      |       |                  |
-|                   |      |       |                  |
-|                   |      |       |                  |
-|                   |      |       |                  |
-|                   |      |       |                  |
-|                   |      |       |                  |
-|                   |      |       |                  |
-|                   |      |       |                  |
-|                   |      |       |                  |
-|                   |      |       |                  |
-|                   |      |       |                  |
-|                   |      |       |                  |
-|                   |      |       |                  |
-|                   |      |       |                  |
 

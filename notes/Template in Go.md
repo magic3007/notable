@@ -1,9 +1,8 @@
 ---
-deleted: true
 tags: [Notebooks/Programming Languages/Golang]
 title: Template in Go
 created: '2020-03-17T08:05:44.743Z'
-modified: '2020-03-17T09:20:49.976Z'
+modified: '2020-04-24T09:59:25.056Z'
 ---
 
 # Template in Go
