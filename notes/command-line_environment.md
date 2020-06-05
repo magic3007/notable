@@ -2,7 +2,7 @@
 tags: [Notebooks/Cheatsheet]
 title: command-line environment
 created: '2020-02-09T12:27:53.581Z'
-modified: '2020-03-09T09:29:41.869Z'
+modified: '2020-05-22T07:01:54.267Z'
 ---
 
 # command-line environment
@@ -162,6 +162,13 @@ It also works with pipes,
 
 Nevertheless, the private key (often `~/.ssh/id_rsa` and more recently `~/.ssh/id_ed25519`) is effectively your password, so treat it like so.
 
+#### Password Authentication
+```bash
+sudo -i
+vi /etc/ssh/sshd_config
+# PasswordAuthentication yes
+service sshd restart
+```
 #### Key generation
 
 To generate a pair you can run [`ssh-keygen`](http://man7.org/linux/man-pages/man1/ssh-keygen.1.html).
@@ -179,7 +186,7 @@ If you have ever configured pushing to GitHub using SSH keys, then you have prob
 `ssh` will look into `.ssh/authorized_keys` to determine which clients it should let in. To copy a public key over you can use:
 
 ```bash
-cat .ssh/id_ed25519.pub | ssh foobar@remote 'cat >> ~/.ssh/authorized_keys'
+cat .ssh/id_rsa.pub | ssh foobar@remote 'cat >> ~/.ssh/authorized_keys'
 ```
 
 A simpler solution can be achieved with `ssh-copy-id` where available:

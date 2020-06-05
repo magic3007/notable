@@ -19,14 +19,14 @@ Attachments can be rendered inline, linked to, and linked to via a button. The `
 ##### Syntax
 
 ```markdown
-![Icon](@attachment/icon_small.png)
+ <img src="@attachment/icon_small.png" alt="Icon" /> 
 [Icon](@attachment/icon_small.png)
 [](@attachment/icon_small.png)
 ```
 
 ##### Result
 
-![Icon](@attachment/icon_small.png)
+ <img src="@attachment/icon_small.png" alt="Icon" /> 
 
 [Icon](@attachment/icon_small.png)
 

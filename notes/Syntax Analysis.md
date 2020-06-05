@@ -139,6 +139,10 @@ S -> Aa | b
 
 A -> Aad | bd | $\epsilon$
 
+> 如何判断是否有左递归?
+>
+> 若一个非终端符号(non-terminal)r有任何直接的文法规则或者透过多个文法规则,推导出的句型(sentential form)其中最左边的符号 又会出现r,则我们说这个非终端符号r是左递归的.
+
  <img src="./Syntax Analysis.assets/image-20200323222607266.png" alt="image-20200323222607266" /> 
 
 ##### left factoring
@@ -210,7 +214,7 @@ eg. parsing suffix expression
 
 implement #2 of LL(1): **table-driving non-recursive parsing**
 
-<img src="./Syntax Analysis.assets/image-20200323233403350.png" alt="image-20200323233403350" style="zoom:50%;" />
+ <img src="./Syntax Analysis.assets/2196908-839e0d54f52f4373.png" alt="img" /> 
 
 non-LL(1) grammar:
 

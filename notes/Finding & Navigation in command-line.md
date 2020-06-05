@@ -2,7 +2,7 @@
 tags: [Notebooks/Cheatsheet]
 title: Finding & Navigation in command-line
 created: '2020-02-05T09:57:04.296Z'
-modified: '2020-02-18T14:54:42.007Z'
+modified: '2020-05-22T14:00:42.194Z'
 ---
 
 # Finding & Navigation in command-line
@@ -28,6 +28,8 @@ modified: '2020-02-18T14:54:42.007Z'
 `find` will recursively search for files matching some criteria. Use `tldr find` for more examples.
 
 ```bash
+
+
 # Find all directories named src
 find . -name src -type d
 # Find all python files that have a folder named test in their path
@@ -58,6 +60,9 @@ find . -name '*.png' -exec convert {} {.}.jpg \;
 - For now I am sticking with ripgrep (`rg`) given how fast and intuitive is. Some examples:
 
   ```bash
+  # 将当前目录(包括子目录)中所有txt文件中的yyyy字符串替换为xxxx字符串
+  sed -i s/yyyy/xxxx/g `grep yyyy -rl --include="*.txt" ./`
+
   # Find all python files where I used the requests library
   rg -t py 'import requests'
   # Find all files (including hidden files) without a shebang line

@@ -17,9 +17,9 @@ representation method:
 
 - DAG
 
-  ![1587723352478](./Intermediate Representation.assets/1587723352478.png)
+   <img src="./Intermediate Representation.assets/1587723352478.png" alt="1587723352478" /> 
 
-  ![1587725381570](./Intermediate Representation.assets/1587725381570.png)
+   <img src="./Intermediate Representation.assets/1587725381570.png" alt="1587725381570" /> 
 
   differences DAG between AST: before creating a new code, these functions first check whether an identical node already exists.00
 
@@ -51,13 +51,13 @@ representation method:
 
 `op arg1 arg2 result`
 
-![1587729452087](./Intermediate Representation.assets/1587729452087.png)
+ <img src="./Intermediate Representation.assets/1587729452087.png" alt="1587729452087" /> 
 
 ### triple
 
 `op arg1 arg2`
 
-![1587729560871](./Intermediate Representation.assets/1587729560871.png)
+ <img src="./Intermediate Representation.assets/1587729560871.png" alt="1587729560871" /> 
 
 ### indirect triples
 
@@ -65,7 +65,7 @@ Problem of triples: moving an instruction may require us to change all reference
 
 solution: <u>**indirect triples**</u>
 
-![1587729704763](./Intermediate Representation.assets/1587729704763.png)
+ <img src="./Intermediate Representation.assets/1587729704763.png" alt="1587729704763" /> 
 
 ## SSA(Static Single Assignment)
 
@@ -73,7 +73,7 @@ based on triples
 
 all assignments in SSA are to variables with distinct names
 
-![1587729997895](./Intermediate Representation.assets/1587729997895.png)
+ <img src="./Intermediate Representation.assets/1587729997895.png" alt="1587729997895" /> 
 
 the same variable may be defined in two different control-flow paths in a program.
 
@@ -119,27 +119,101 @@ Type expression may contain variables whose values are type expressions.
 
 widening & narrowing
 
-![1587731719534](./Intermediate Representation.assets/1587731719534.png)
+ <img src="./Intermediate Representation.assets/1587731719534.png" alt="1587731719534" /> 
 
-![1587731739245](./Intermediate Representation.assets/1587731739245.png)
+ <img src="./Intermediate Representation.assets/1587731739245.png" alt="1587731739245" /> 
 
 ### Declarations
 
-![1587732023874](./Intermediate Representation.assets/1587732023874.png)
+ <img src="./Intermediate Representation.assets/1587732023874.png" alt="1587732023874" /> 
 
 ### Storage Layout of local variables
 
-![1587731450576](./Intermediate Representation.assets/1587731450576.png)
+ <img src="./Intermediate Representation.assets/1587731450576.png" alt="1587731450576" /> 
 
-![1587732077846](./Intermediate Representation.assets/1587732077846.png)
+ <img src="./Intermediate Representation.assets/1587732077846.png" alt="1587732077846" /> 
 
 Note: t & w are global variables.
 
 ### sequence of declarations
 
-![1587732539494](./Intermediate Representation.assets/1587732539494.png)
+ <img src="./Intermediate Representation.assets/1587732539494.png" alt="1587732539494" /> 
 
 ### Fields in Records and Classes
 
-![1587732651394](./Intermediate Representation.assets/1587732651394.png)
+ <img src="./Intermediate Representation.assets/1587732651394.png" alt="1587732651394" /> 
+
+## Translation
+
+### three-address code
+
+ <img src="./Intermediate Representation.assets/1588075030287.png" alt="1588075030287" /> 
+
+on-the-fly(function `gen` will emit code)
+
+ <img src="./Intermediate Representation.assets/1588075101042.png" alt="1588075101042" /> 
+
+### array
+
+row major(Java/C) column major(Fortran) 
+
+ <img src="./Intermediate Representation.assets/1588075568674.png" alt="1588075568674" /> 
+
+ <img src="./Intermediate Representation.assets/1588075588056.png" alt="1588075588056" /> 
+
+
+
+ <img src="./Intermediate Representation.assets/1588075766346.png" alt="1588075766346" /> 
+
+ <img src="./Intermediate Representation.assets/1588075952713.png" alt="1588075952713" /> 
+
+ <img src="./Intermediate Representation.assets/1588076088881.png" alt="1588076088881" /> 
+
+### control flow
+
+ <img src="./Intermediate Representation.assets/1588076510948.png" alt="1588076510948" /> 
+
+boolean expression(`x = a < b`)
+
+ <img src="./Intermediate Representation.assets/1588076594678.png" alt="1588076594678" /> 
+
+### backpatch
+
+problem: `if (B) S`, how to evaluate `B.false` in one pass?
+
+solution:
+
+<img src="./Intermediate Representation.assets/1588076783911.png" alt="1588076783911" style="zoom:50%;" />
+
+truelist, falselist 和 nextlist 都是 综合属性.
+
+<img src="./Intermediate Representation.assets/1588077110463.png" alt="1588077110463" style="zoom:50%;" />
+
+<img src="./Intermediate Representation.assets/1588077459710.png" alt="1588077459710" style="zoom:50%;" />
+
+<img src="./Intermediate Representation.assets/1588077708446.png" alt="1588077708446" style="zoom:50%;" />
+
+<img src="./Intermediate Representation.assets/1588077827421.png" alt="1588077827421" style="zoom:50%;" />
+
+<img src="./Intermediate Representation.assets/1588077927347.png" alt="1588077927347" style="zoom:50%;" />
+
+<img src="./Intermediate Representation.assets/1588078789269.png" alt="1588078789269" style="zoom:50%;" />
+
+<img src="./Intermediate Representation.assets/1588079164445.png" alt="1588079164445" style="zoom:50%;" />
+
+<img src="./Intermediate Representation.assets/1588079374244.png" alt="1588079374244" style="zoom:50%;" />
+
+### break & continue
+
+<img src="./Intermediate Representation.assets/1588079589489.png" alt="1588079589489" style="zoom:50%;" />
+
+#### zip-backpatch
+
+<img src="./Intermediate Representation.assets/1588079750923.png" alt="1588079750923" style="zoom:50%;" />
+
+### switch
+
+ <img src="./Intermediate Representation.assets/1588079989188.png" alt="1588079989188" /> 
+
+ <img src="./Intermediate Representation.assets/1588080060840.png" alt="1588080060840" /> 
 

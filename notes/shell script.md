@@ -2,7 +2,7 @@
 tags: [Notebooks/Cheatsheet]
 title: shell script
 created: '2020-02-18T14:38:52.792Z'
-modified: '2020-03-18T15:43:32.800Z'
+modified: '2020-04-30T06:19:54.203Z'
 ---
 
 # shell script
@@ -252,6 +252,8 @@ for arg in reversed(sys.argv[1:]):
 ## Misc
 
 - `set -e` = `set -o errexit`: used at the beginning; if any statement returns error, stop this scipt immediately. `set +e` vice versa.
+
+- `IMAGE_NAME="${1:-$CPU_IMAGE_TAG}"` : if `$1` exists, than `IMAGE_NAME=$1` else `IMAGE=$CPU_IMAGE_TAG`
 ## Resource
 - [cesho](cecho – a function to print using different colors in bash): cecho – a function to print using different colors in bash
 

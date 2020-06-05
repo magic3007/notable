@@ -13,14 +13,13 @@ DFA vs. NFA
 - DFA has no $\epsilon$ edge
 - NFA: one latter -> multi states
 
-
 ### construct DFA from NFA
 
 $\epsilon-closure$ : move along any $\epsilon$ edge, until converging to a closure, such subset is a state in DFA.
 
 <img src="./Regex=NFA=DFA.assets/image-20200308195707448.png" alt="image-20200308195707448" style="zoom:50%;" />
 
-### construct DFA directly from regex expression
+### construct NFA directly from regex expression
 
 *Proof*:
 
@@ -34,7 +33,7 @@ QOE.
 
 *features*:
 
-1. the number of state in DFA $\leq$ 2 * the number of operators in regex expression
+1. the number of state in NFA $\leq$ 2 * the number of operators in regex expression
 
 2. only have one starting state and one ending state
 

@@ -40,7 +40,7 @@ cc lex.yy.c -L/usr/local/opt/flex/lib -ll
 
 ## Yacc
 
-<img src="Lex && Yacc.assets/image-20200414225352109.png" alt="image-20200414225352109" style="zoom:80%;" />
+<img src="./Lex && Yacc.assets/image-20200414225352109.png" alt="image-20200414225352109" style="zoom:80%;" />
 
 - `$$`: left-hand side
 - `$<n>`: the n-th token on right-hand side(including terminals)

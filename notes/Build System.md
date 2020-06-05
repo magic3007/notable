@@ -1,17 +1,18 @@
 ---
 tags: [Notebooks/Cheatsheet/Metaprogramming]
-title: Metaprogramming
+title: Build System
 created: '2020-02-14T15:50:18.269Z'
-modified: '2020-02-23T07:29:44.448Z'
+modified: '2020-06-02T14:46:10.938Z'
 ---
 
-# Metaprogramming
+# Build System
 
 ## Build Systems
 
 - [make]()
 - [cmake]()
 - [gradle](https://gradle.org/)
+- [Bazel](https://bazel.build/): Build and test Java, C++, Android, iOS, Go and a wide variety of other language platforms. Bazel runs on Windows, macOS, and Linux. 
 
 
 ## Dependency management

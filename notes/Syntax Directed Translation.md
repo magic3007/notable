@@ -52,7 +52,7 @@ Attach program fragments to the productions of a grammar.
 
     - (LDD)input: inherited attribute; output: synthesized attribute. Recursive Subroutine Algorithm
 
-      <img src="./Syntax Directed Translation.assets/image-20200408224911826.png" alt="image-20200408224911826" style="zoom:33%;" />
+      <img src="./Syntax Directed Translation.assets/image-20200408224911826.png" alt="image-20200408224911826" style="zoom:70%;" />
 
 
 
@@ -96,11 +96,11 @@ context-free grammar with program fragments embedded within production bodies
 | ------------------ | ----------- | ----------- |
 | attribute of SDT   | L-attribute | S-attribute |
 
-![1587717701749](./Syntax Directed Translation.assets/1587717701749.png)
+ <img src="./Syntax Directed Translation.assets/1587717701749.png" alt="1587717701749" /> 
 
-![1587719355554](./Syntax Directed Translation.assets/1587719355554.png)
+ <img src="./Syntax Directed Translation.assets/1587719355554.png" alt="1587719355554" /> 
 
-![1587719505305](./Syntax Directed Translation.assets/1587719505305.png)
+ <img src="./Syntax Directed Translation.assets/1587719505305.png" alt="1587719505305" /> 
 
 implementation for L-Attributed SDT
 
@@ -114,11 +114,11 @@ implementation for L-Attributed SDT
 
 <u>postfix SDT</u>: all actions are at the end of the body of the production
 
-![1587717967754](./Syntax Directed Translation.assets/1587717967754.png)
+ <img src="./Syntax Directed Translation.assets/1587717967754.png" alt="1587717967754" /> 
 
 postfix SDT could be implemented during LR parsing
 
-![1587718203851](./Syntax Directed Translation.assets/1587718203851.png)
+ <img src="./Syntax Directed Translation.assets/1587718203851.png" alt="1587718203851" /> 
 
  Not all SDT's can be implemented during one pass for both LL and LR(eg. infix -> prefix expression), except for *postfix SDT* and *L-attribute SDT*. 
 
@@ -126,17 +126,17 @@ A general solution is to build AST and insert virtual action nodes and then scan
 
 ### eliminating left recursion for SDT’s
 
-![1587719013557](./Syntax Directed Translation.assets/1587719013557.png)
+ <img src="./Syntax Directed Translation.assets/1587719013557.png" alt="1587719013557" /> 
 
-![1587719026371](./Syntax Directed Translation.assets/1587719026371.png)
+ <img src="./Syntax Directed Translation.assets/1587719026371.png" alt="1587719026371" /> 
 
-![1587719040757](./Syntax Directed Translation.assets/1587719040757.png)
+ <img src="./Syntax Directed Translation.assets/1587719040757.png" alt="1587719040757" /> 
 
 ### recursive-descent parser of L-attribute SDD's
 
-![1587719898534](./Syntax Directed Translation.assets/1587719898534.png)
+ <img src="./Syntax Directed Translation.assets/1587719898534.png" alt="1587719898534" /> 
 
-![1587719834737](./Syntax Directed Translation.assets/1587719834737.png)
+ <img src="./Syntax Directed Translation.assets/1587719834737.png" alt="1587719834737" /> 
 
 ### on-the-fly of L-attribute SDD's
 
@@ -144,16 +144,16 @@ A general solution is to build AST and insert virtual action nodes and then scan
 
 <u>**main attributes**</u>:
 
-![1587720083058](./Syntax Directed Translation.assets/1587720083058.png)
+ <img src="./Syntax Directed Translation.assets/1587720083058.png" alt="1587720083058" /> 
 
 We could **emit** the non-main-attribute elements of the concatenations during pass!
 
-![1587720312313](./Syntax Directed Translation.assets/1587720312313.png)
+ <img src="./Syntax Directed Translation.assets/1587720312313.png" alt="1587720312313" /> 
 
 ### LR Parsing of L-Attributed SDD's
 
-![1587720773024](./Syntax Directed Translation.assets/1587720773024.png)
+ <img src="./Syntax Directed Translation.assets/1587720773024.png" alt="1587720773024" /> 
 
-![1587720978041](./Syntax Directed Translation.assets/1587720978041.png)
+ <img src="./Syntax Directed Translation.assets/1587720978041.png" alt="1587720978041" /> 
 
-![1587721121386](./Syntax Directed Translation.assets/1587721121386.png)
+ <img src="./Syntax Directed Translation.assets/1587721121386.png" alt="1587721121386" /> 

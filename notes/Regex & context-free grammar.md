@@ -26,9 +26,9 @@ where `(?!)` is negative assertion.
 $$
 \begin{align}
 S & \rightarrow A | B \\
-A & \rightarrow 1 | 0A1 | 1A0 | EAE | AA\\
-B & \rightarrow 0 | 0B1 | 1B0 | EBE | BB \\
-E & \rightarrow 0A1A | 1A0A | \epsilon
+A & \rightarrow 0E | 0A | 1AA \\
+B & \rightarrow 1E | 1B | 0BB \\
+E & \rightarrow 0E1 | 1E0 | EE | \epsilon
 \end{align}
 $$
 

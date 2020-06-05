@@ -27,7 +27,8 @@ modified: '2020-04-10T13:14:18.317Z'
 - [fishshell](https://fishshell.com/): history-based autosuggestions
 - [fasd](https://github.com/clvv/fasd): offers quick access to files and directories, inspired by autojump, z and v
 - [Environment Modules](https://modules.readthedocs.io/en/latest/): dynamic modification of a user's environment via modulefile
-- [mosh](https://github.com/mobile-shell/mosh): Mobile Shell 
+- [mosh](https://github.com/mobile-shell/mosh): Mobile Shell
+- [sshpass](): a simple and lightweight command line tool that enables us to provide password (non-interactive password authentication) to the command prompt itself
 
 
 
