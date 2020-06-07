@@ -93,9 +93,9 @@ Improvement on KL algorithm
 
    <img src="./Circuit Partition.assets/image-20200606195124884.png" alt="image-20200606195124884" /> 
    
-   ![image-20200607122233390](./Circuit Partition.assets/image-20200607122233390.png)
+    <img src="./Circuit Partition.assets/image-20200607122233390.png" alt="image-20200607122233390" /> 
 
-![image-20200607113035157](./Circuit Partition.assets/image-20200607113035157.png)
+ <img src="./Circuit Partition.assets/image-20200607113035157.png" alt="image-20200607113035157" /> 
 
 Time Complexity
 
