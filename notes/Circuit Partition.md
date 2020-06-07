@@ -37,7 +37,7 @@ Suppose partitioning a network $N$ into $N_1$, $N_2$, … $N_k$ such that
 
 - Each partition has an IO constraint
   $$
-  c(N_i, N - N_i) \leq _i
+  c(N_i, N - N_i) \leq I_i
   $$
   Minimize the total interconnection(bottleneck of delay):
   $$
