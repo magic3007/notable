@@ -193,15 +193,22 @@ spilling
   - put def and use of the same variable into a **web** 
   - **web** is the unit of register allocation 
 
-   <img src="./Code Generation.assets/image-20200529222545969.png" alt="image-20200529222545969" /> 
+   <img src="./Code Generation.assets/image-20200617162716717.png" alt="image-20200617162716717" /> 
+
+     <img src="./Code Generation.assets/image-20200617162847081.png" alt="image-20200617162847081" /> 
+
+   <img src="./Code Generation.assets/image-20200617163526590.png" alt="image-20200617163526590" /> 
 
 - convex set 
-  - any a, b in S, every c on the path from a to b, c is in S 
-
+  
+- any a, b in S, every c on the path from a to b, c is in S 
+  
 - live range
-  - the smallest convex set containing def and use 
-
+  
+- the smallest convex set containing def and use 
+  
 - interfere
+  
   - the live ranges of two webs intersect 
 
 

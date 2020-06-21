@@ -23,6 +23,7 @@ where `(?!)` is negative assertion.
 
 > number of a != b
 
+solution #1:
 $$
 \begin{align}
 S & \rightarrow A | B \\
@@ -31,6 +32,21 @@ B & \rightarrow 1E | 1B | 0BB \\
 E & \rightarrow 0E1 | 1E0 | EE | \epsilon
 \end{align}
 $$
+solution #2:
+		S → A | B
+		A → 1 | 0A1 | 1A0 | AA | EAE B → 0 | 0B1 | 1B0 | BB | EBE
+		E → 0E1 | 1E0 | EE | ε
+
+solution #3:
+		S → TS | C | D
+		T → 1B | 0A
+		A → 1 | 0AA
+		B → 0 | 1BB
+		C → 0E
+		E → 0AE | 0E | ε（或: E → 0E | 0E1E | ε）
+		D → 1F
+		F → 1BF | 1F | ε （或: F → 1F | 1F0F | ε）
+
 
 > 不能表示形如xx的0和1组成的串
 
