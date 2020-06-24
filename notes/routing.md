@@ -21,16 +21,16 @@ There are three different types of routing. Given a set of blocks placed on a la
 
 - *detailed routing*: For each routing region, complete the interconnection be assigning horizonal and vertical metal line segments on the layout surface.
 
-  ![image-20200623180705014](./routing.assets/image-20200623180705014.png)
+   <img src="./routing.assets/image-20200623180705014.png" alt="image-20200623180705014" /> 
 
-  ![image-20200623180734100](./routing.assets/image-20200623180734100.png)
+   <img src="./routing.assets/image-20200623180734100.png" alt="image-20200623180734100" /> 
   
   > Note:  With the development of modern technology, nowadays we use *channel-less routing* in industry, which means all the routing wires are on multiply layers apart from the blocks.
 
 
 ## Grid Routing
 
-![image-20200623181425775](./routing.assets/image-20200623181425775.png)
+ <img src="./routing.assets/image-20200623181425775.png" alt="image-20200623181425775" /> 
 
 ### Maze Running Algorithm
 
@@ -46,23 +46,23 @@ Try to intuitively minimize the number of bends.
 
 (red 0)(blue 0)(red 1)(blue 1)(red 0)……
 
-![image-20200623202330156](./routing.assets/image-20200623202330156.png)
+ <img src="./routing.assets/image-20200623202330156.png" alt="image-20200623202330156" /> 
 
 - connecting multi-point nets
 
-  ![image-20200623204549158](./routing.assets/image-20200623204549158.png)
+   <img src="./routing.assets/image-20200623204549158.png" alt="image-20200623204549158" /> 
 
 #### Hadlock’s Algorithm
 
-![image-20200623213237688](./routing.assets/image-20200623213237688.png)
+ <img src="./routing.assets/image-20200623213237688.png" alt="image-20200623213237688" /> 
 
-![image-20200623213431850](./routing.assets/image-20200623213431850.png)
+ <img src="./routing.assets/image-20200623213431850.png" alt="image-20200623213431850" /> 
 
 The cells with least detour numbers will be expanded with high priority.
 
 Any cell with the same detour number can be expanded simultaneously.
 
-![image-20200623213759706](./routing.assets/image-20200623213759706.png)
+ <img src="./routing.assets/image-20200623213759706.png" alt="image-20200623213759706" /> 
 
 ### Linear search Algorithm
 
@@ -73,61 +73,61 @@ Any cell with the same detour number can be expanded simultaneously.
     - Along the trial line, all its grid points are traced
     - starting from these grid points, new trial line of level i are generated perpendicular to the trial line of level i-1
 
-![image-20200623215309783](./routing.assets/image-20200623215309783.png)
+ <img src="./routing.assets/image-20200623215309783.png" alt="image-20200623215309783" /> 
 
 #### Hightower’s Algorithm
 
-![image-20200623215444732](./routing.assets/image-20200623215444732.png)
+ <img src="./routing.assets/image-20200623215444732.png" alt="image-20200623215444732" /> 
 
-![image-20200623215712793](./routing.assets/image-20200623215712793.png)
+ <img src="./routing.assets/image-20200623215712793.png" alt="image-20200623215712793" /> 
 
 ### Steiner Tree Based Algorithm
 
 ## Global Routing
 
-![image-20200624002106205](./routing.assets/image-20200624002106205.png)
+ <img src="./routing.assets/image-20200624002106205.png" alt="image-20200624002106205" /> 
 
-![image-20200624002458323](./routing.assets/image-20200624002458323.png)
+ <img src="./routing.assets/image-20200624002458323.png" alt="image-20200624002458323" /> 
 
-![image-20200624002442598](./routing.assets/image-20200624002442598.png)
+ <img src="./routing.assets/image-20200624002442598.png" alt="image-20200624002442598" /> 
 
  ### Design Style Specific Issues
 
 - <u>Standard Cell</u>. (Terminal: feed through)
 
-  ![image-20200624100404553](./routing.assets/image-20200624100404553.png)
+   <img src="./routing.assets/image-20200624100404553.png" alt="image-20200624100404553" /> 
   
 - <u>Gate Array</u>
 
-  ![image-20200624100509257](./routing.assets/image-20200624100509257.png)
+   <img src="./routing.assets/image-20200624100509257.png" alt="image-20200624100509257" /> 
 
 ### Graph Models used in Global Routing
 
-![image-20200624100556449](./routing.assets/image-20200624100556449.png)
+ <img src="./routing.assets/image-20200624100556449.png" alt="image-20200624100556449" /> 
 
 - Checker Board Model: Not all the blockshave the same size. The edge capacities are computed based on the actual area available for routing on the cell boundary.
 
-![image-20200624101140007](./routing.assets/image-20200624101140007.png)
+ <img src="./routing.assets/image-20200624101140007.png" alt="image-20200624101140007" /> 
 
 - Channel Intersection Graph Model(channel->edge, intersection -> vertices)
 
-  ![image-20200624101433261](./routing.assets/image-20200624101433261.png)
+   <img src="./routing.assets/image-20200624101433261.png" alt="image-20200624101433261" /> 
 
 - Extended Channel Intersection Graph: also includes the pins as vertices
 
-  ![image-20200624101620316](./routing.assets/image-20200624101620316.png)
+   <img src="./routing.assets/image-20200624101620316.png" alt="image-20200624101620316" /> 
 
 ### Relation with Detailed Routing
 
-![image-20200624102112894](./routing.assets/image-20200624102112894.png)
+ <img src="./routing.assets/image-20200624102112894.png" alt="image-20200624102112894" /> 
 
 ### When floor-plain is Given
 
 - The **dual graph** of floor-plan is used for global routing.
 
-![image-20200624110658162](./routing.assets/image-20200624110658162.png)
+ <img src="./routing.assets/image-20200624110658162.png" alt="image-20200624110658162" /> 
 
-![image-20200624110836646](./routing.assets/image-20200624110836646.png)
+ <img src="./routing.assets/image-20200624110836646.png" alt="image-20200624110836646" /> 
 
 ### When Placement is Given
 
@@ -135,13 +135,13 @@ The routing region is partitioned into simpler regions.
 
 ### Global Routing Algorithm: Sequential Approaches
 
-![image-20200624111303394](./routing.assets/image-20200624111303394.png)
+ <img src="./routing.assets/image-20200624111303394.png" alt="image-20200624111303394" /> 
 
 *Rip up and reroute heuristic in case of conflict.*
 
 ### Global Routing Algorithm: Integer Linear Programming Approach(only for small nets)
 
-![image-20200624113025934](./routing.assets/image-20200624113025934.png)
+ <img src="./routing.assets/image-20200624113025934.png" alt="image-20200624113025934" /> 
 
 constraints:
 
@@ -165,38 +165,38 @@ constraints:
   - via connection: metal connection between different layers
   - channel & switchboxes
 
-  ![image-20200624133420561](./routing.assets/image-20200624133420561.png)
+   <img src="./routing.assets/image-20200624133420561.png" alt="image-20200624133420561" /> 
 
-![image-20200624120810287](./routing.assets/image-20200624120810287.png)
+ <img src="./routing.assets/image-20200624120810287.png" alt="image-20200624120810287" /> 
 
 ### Order of Routing Regions
 
 There are differences between slicing placement & non-slicing placement. In this case, some the routing regions are to be considered as switchboxes.
 
-![image-20200624121151918](./routing.assets/image-20200624121151918.png)
+ <img src="./routing.assets/image-20200624121151918.png" alt="image-20200624121151918" /> 
 
 ### Models for Multi-layer Routing
 
-![image-20200624132739011](routing.assets/image-20200624132739011.png)
+ <img src="./routing.assets/image-20200624132739011.png" alt="image-20200624132739011" /> 
 
 ### Channel Routing
 
-![image-20200624133330481](./routing.assets/image-20200624133330481.png)
+ <img src="./routing.assets/image-20200624133330481.png" alt="image-20200624133330481" /> 
 
 [Problem Statement]
 
-![image-20200624133739790](./routing.assets/image-20200624133739790.png)
+ <img src="./routing.assets/image-20200624133739790.png" alt="image-20200624133739790" /> 
 
 #### Channel Constraints
 
-![image-20200624133827092](./routing.assets/image-20200624133827092.png)
+ <img src="./routing.assets/image-20200624133827092.png" alt="image-20200624133827092" /> 
 
 - Horizontal Constraint Graph(HCG)
 It is a graph where vertices represent nets, and edges represent horizontal constraints.
-![image-20200624134006973](./routing.assets/image-20200624134006973.png)
+ <img src="./routing.assets/image-20200624134006973.png" alt="image-20200624134006973" /> 
 - Vertical Constraint Graph(VCG)
 
-![image-20200624134108605](./routing.assets/image-20200624134108605.png)
+ <img src="./routing.assets/image-20200624134108605.png" alt="image-20200624134108605" /> 
 
 [category of two-layer channel routing algorithm]
 
@@ -206,77 +206,77 @@ It is a graph where vertices represent nets, and edges represent horizontal cons
 
 -  Hierarchical Channel Router
 
-  ![image-20200624154208217](./routing.assets/image-20200624154208217.png)
+   <img src="./routing.assets/image-20200624154208217.png" alt="image-20200624154208217" /> 
 
   [category of three-layer channel routing algorithm]
 
-  ![image-20200624154443753](./routing.assets/image-20200624154443753.png)
+   <img src="./routing.assets/image-20200624154443753.png" alt="image-20200624154443753" /> 
 
   
 
 ####  Left-Edge Algorithm(LEA)
 
-![image-20200624135702674](./routing.assets/image-20200624135702674.png)
+ <img src="./routing.assets/image-20200624135702674.png" alt="image-20200624135702674" /> 
 
 - terminal
 
   - dogleg
 
-    ![image-20200624135836848](./routing.assets/image-20200624135836848.png)
+     <img src="./routing.assets/image-20200624135836848.png" alt="image-20200624135836848" /> 
 
-![image-20200624135957481](./routing.assets/image-20200624135957481.png)
+ <img src="./routing.assets/image-20200624135957481.png" alt="image-20200624135957481" /> 
 
 Extension to Left-Edge Algorithm: no cycle in VCG
 
-![image-20200624140256981](./routing.assets/image-20200624140256981.png)
+ <img src="./routing.assets/image-20200624140256981.png" alt="image-20200624140256981" /> 
 
 #### Dogleg Router
 
-![image-20200624143836482](./routing.assets/image-20200624143836482.png)
+ <img src="./routing.assets/image-20200624143836482.png" alt="image-20200624143836482" /> 
 
 *Note: Only use dogleg when there are three or more terminals.*
 
-![image-20200624144027552](./routing.assets/image-20200624144027552.png)
+ <img src="./routing.assets/image-20200624144027552.png" alt="image-20200624144027552" /> 
 
-![image-20200624144352988](./routing.assets/image-20200624144352988.png)
+ <img src="./routing.assets/image-20200624144352988.png" alt="image-20200624144352988" /> 
 
 #### Net Merge Channel Router
 
-![image-20200624150334480](./routing.assets/image-20200624150334480.png)
+ <img src="./routing.assets/image-20200624150334480.png" alt="image-20200624150334480" /> 
 
-![image-20200624150739502](./routing.assets/image-20200624150739502.png)
+ <img src="./routing.assets/image-20200624150739502.png" alt="image-20200624150739502" /> 
 
- ![image-20200624151536043](./routing.assets/image-20200624151536043.png)
+  <img src="./routing.assets/image-20200624151536043.png" alt="image-20200624151536043" /> 
 
-![image-20200624151517171](./routing.assets/image-20200624151517171.png)
+ <img src="./routing.assets/image-20200624151517171.png" alt="image-20200624151517171" /> 
 
-![image-20200624151734776](./routing.assets/image-20200624151734776.png)
+ <img src="./routing.assets/image-20200624151734776.png" alt="image-20200624151734776" /> 
 
-![image-20200624152032704](./routing.assets/image-20200624152032704.png)
+ <img src="./routing.assets/image-20200624152032704.png" alt="image-20200624152032704" /> 
 
 In cases of multiple choices, merge the net-pair that minimizes the length of the longest path in VCG.
 
-![image-20200624152454144](./routing.assets/image-20200624152454144.png)
+ <img src="./routing.assets/image-20200624152454144.png" alt="image-20200624152454144" /> 
 
-![image-20200624152541054](./routing.assets/image-20200624152541054.png)
+ <img src="./routing.assets/image-20200624152541054.png" alt="image-20200624152541054" /> 
 
-![image-20200624152750997](./routing.assets/image-20200624152750997.png)
+ <img src="./routing.assets/image-20200624152750997.png" alt="image-20200624152750997" /> 
 
 #### Greedy Channel Router
 
-![image-20200624153349182](./routing.assets/image-20200624153349182.png)
+ <img src="./routing.assets/image-20200624153349182.png" alt="image-20200624153349182" /> 
 
 #### HVH(3-layer) from HV Solution
 
 - terminal: track-ordering graph
 
-![image-20200624154641827](./routing.assets/image-20200624154641827.png)
+ <img src="./routing.assets/image-20200624154641827.png" alt="image-20200624154641827" /> 
 
-![image-20200624154902073](./routing.assets/image-20200624154902073.png)
+ <img src="./routing.assets/image-20200624154902073.png" alt="image-20200624154902073" /> 
 
-![image-20200624155015694](./routing.assets/image-20200624155015694.png)
+ <img src="./routing.assets/image-20200624155015694.png" alt="image-20200624155015694" /> 
 
-![image-20200624155147684](routing.assets/image-20200624155147684.png)
+ <img src="./routing.assets/image-20200624155147684.png" alt="image-20200624155147684" /> 
 
 Illustration:
 
@@ -285,16 +285,16 @@ Illustration:
 
 ### Switchbox Routing
 
- ![image-20200624155420784](./routing.assets/image-20200624155420784.png)
+  <img src="./routing.assets/image-20200624155420784.png" alt="image-20200624155420784" /> 
 
 #### Switchbox Routing: BEAVER
 
 ###  Over-the-cell(OTC) Routing
 
-![image-20200624155725942](./routing.assets/image-20200624155725942.png)
+ <img src="./routing.assets/image-20200624155725942.png" alt="image-20200624155725942" /> 
 
 - only for standard cell based design
 
-![image-20200624155909836](./routing.assets/image-20200624155909836.png)
+ <img src="./routing.assets/image-20200624155909836.png" alt="image-20200624155909836" /> 
 
-![image-20200624160036427](./routing.assets/image-20200624160036427.png)
+ <img src="./routing.assets/image-20200624160036427.png" alt="image-20200624160036427" /> 

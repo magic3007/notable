@@ -17,7 +17,7 @@ modified: '2020-06-06T14:02:46.858Z'
 
 <img src="./Placement.assets/image-20200621144003804.png" alt="image-20200621144003804" />
 
-![image-20200623082502326](./Placement.assets/image-20200623082502326.png)
+ <img src="./Placement.assets/image-20200623082502326.png" alt="image-20200623082502326" /> 
 
 ### Wirelength Estimation
 
@@ -56,33 +56,33 @@ The actual wiring paths are not known during placement.
 
 ###  Classification of  Placement Algorithms
 
-![image-20200623091507635](./Placement.assets/image-20200623091507635.png)
+ <img src="./Placement.assets/image-20200623091507635.png" alt="image-20200623091507635" /> 
 
 ## Placement Algorithm: Simulated Annealing
 
 ### Case Study: Timber Wolf
 
-![image-20200623101106037](./Placement.assets/image-20200623101106037.png)
+ <img src="./Placement.assets/image-20200623101106037.png" alt="image-20200623101106037" /> 
 
 #### SCHEDULE(T)
 
-![image-20200623101241781](./Placement.assets/image-20200623101241781.png)
+ <img src="./Placement.assets/image-20200623101241781.png" alt="image-20200623101241781" /> 
 
 #### the PERTURB Function
 
-![image-20200623101325369](./Placement.assets/image-20200623101325369.png)
+ <img src="./Placement.assets/image-20200623101325369.png" alt="image-20200623101325369" /> 
 
 ##### Move Restriction
 
 move range: global -> local
 
-![image-20200623101429000](./Placement.assets/image-20200623101429000.png)
+ <img src="./Placement.assets/image-20200623101429000.png" alt="image-20200623101429000" /> 
 
 #### Cost Function
 
 Add items of penalty for overlapping to avoid overlapping
 
-![image-20200623100958230](./Placement.assets/image-20200623100958230.png)
+ <img src="./Placement.assets/image-20200623100958230.png" alt="image-20200623100958230" /> 
 
 ### Case Study: Dragon2000
 
@@ -119,19 +119,19 @@ Recall partition algorithm …
 
  The division(horizontal->vertical->horizontal-> …) is recursively applied to the quarters in the same rows/columns.
 
-![image-20200623173044746](./Placement.assets/image-20200623173044746.png)
+ <img src="./Placement.assets/image-20200623173044746.png" alt="image-20200623173044746" /> 
 
 ### Recursive Bi-partitioning Min-cut Placement
 
  The division(horizontal->vertical->horizontal-> …) is recursively applied to each quarter of the layout.
 
-![image-20200623173216852](./Placement.assets/image-20200623173216852.png)
+ <img src="./Placement.assets/image-20200623173216852.png" alt="image-20200623173216852" /> 
 
 ### Terminal Propagation Algorithm
 
 When a net connecting two terminals is cut, a dummy terminal is propagated to the nearest pin on the boundary.
 
-![image-20200623173523072](./Placement.assets/image-20200623173523072.png)
+ <img src="./Placement.assets/image-20200623173523072.png" alt="image-20200623173523072" /> 
 
 ## Placement Algorithm: Cluster Growth
 
